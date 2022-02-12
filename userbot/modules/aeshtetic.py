@@ -9,7 +9,7 @@ from telethon import events
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 
 PRINTABLE_ASCII = range(0x21, 0x7F)
 
@@ -24,7 +24,7 @@ def aesthetify(string):
         yield chr(c)
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern="ae(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern="ae(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
