@@ -19,7 +19,7 @@ from telethon import events
 from userbot import CMD_HANDLER, CMD_LIST, bot
 
 
-def cilik_cmd(pattern=None, command=None, **args):
+def bdrl_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
@@ -182,8 +182,8 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**★ CILIKUSERBOT ERROR REPORT ★**\n\n"
-                    link = "[Group Support](https://t.me/CilikSupport)"
+                    text = "**★ BDRLUBOT ERROR REPORT ★**\n\n"
+                    link = "[Group Support](https://t.me/BdrlSupporrt)"
                     text += "Jika mau, Anda bisa melaporkan error ini, "
                     text += f"Cukup forward saja pesan ini ke {link}.\n\n"
 
@@ -192,7 +192,7 @@ def register(**args):
                     ftext += "\nkami hanya mencatat fakta error dan tanggal,"
                     ftext += "\nkami menghormati privasi Anda."
                     ftext += "\nJika mau, Anda bisa melaporkan error ini,"
-                    ftext += "\ncukup forward saja pesan ini ke @CilikSupport"
+                    ftext += "\ncukup forward saja pesan ini ke @BdrlSupporrt"
                     ftext += "\n================================\n\n"
                     ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
                     ftext += "\nTanggal : " + date
