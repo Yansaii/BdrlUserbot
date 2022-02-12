@@ -5,10 +5,10 @@ from time import sleep
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"heu(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"heu(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("▒▒▒▒▒▄██████████▄▒▒▒▒▒\n"
                      "▒▒▒▄██████████████▄▒▒▒\n"
@@ -24,7 +24,7 @@ async def _(typew):
                      "▒▒▒▒▀████████████▀▒▒▒▒\n")
     
     
-@bot.on(cilik_cmd(outgoing=True, pattern=r"hem(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"hem(?: |$)(.*)"))
 async def _(typew):
     await typew.edit(" ╭━┳━╭━╭━╮╮\n"
                      " ┃┈┈┈┣▅╋▅┫┃\n"
@@ -37,7 +37,7 @@ async def _(typew):
                      "      **MENCURIGAKAN**\n")
     
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"wle(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"wle(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("┈╭━━━━━━━━━━━╮┈\n" 
                      "╭╯┈╭━━╮┈╭━━╮┈╰╮\n" 
@@ -49,7 +49,7 @@ async def _(typew):
                      "┈┃┈┈┈┈┈╰━╯┈┈┈┃┈\n")
     
     
-@bot.on(cilik_cmd(outgoing=True, pattern=r"peler(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"peler(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("`MAU LIAT PELER GA???`")
     sleep(1)
@@ -70,7 +70,7 @@ async def _(typew):
                      "░▒▒▀▀▄▄▄▄█▄▄▀░░░░░░░█─\n")
     
     
-@bot.on(cilik_cmd(outgoing=True, pattern=r"ahh(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"ahh(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("ahhh")
     await typew.edit("ahhh ahhh")
