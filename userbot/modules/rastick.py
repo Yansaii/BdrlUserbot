@@ -3,11 +3,11 @@ from asyncio import sleep
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 from userbot.utils import deEmojify
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"rst(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"rst(?: |$)(.*)"))
 async def rastick(animu):
     text = animu.pattern_match.group(1)
     if not text:
