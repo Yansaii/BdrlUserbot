@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">Cɪʟɪᴋ-Uꜱᴇʀʙᴏᴛ<img src="./resources/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">BDRL-UBOT<img src="./resources/GeezFire.gif" width="35px"></h1>
 <p align="center">
     <img alt="CILIK VERSION" src="https://img.shields.io/badge/CILIK%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
@@ -10,7 +10,7 @@
    </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg">
+  <img src="">
 </p>
 
 Cilik-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
