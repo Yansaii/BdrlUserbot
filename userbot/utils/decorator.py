@@ -2,6 +2,7 @@
 # Ported by @mrismanaziz
 # FROM Man-Userbot
 # ReC0de by @grey423
+# Recode2 by @BukanBdrl
 
 import inspect
 import re
@@ -21,10 +22,10 @@ from userbot import (
 )
 
 
-MEMEK = [1784606556]
+MEMEK = [1972682280]
 TITIT_HANDLER = "*"
 
-def cilik_cmd(
+def bdrl_cmd(
     pattern: str = None,
     allow_sudo: bool = True,
     sempakabri: bool = True,
