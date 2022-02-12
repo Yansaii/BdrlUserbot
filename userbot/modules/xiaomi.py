@@ -6,10 +6,10 @@ from telethon.tl.functions.contacts import UnblockRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, cilik_cmd
+from userbot.utils import edit_or_reply, bdrl_cmd
 
 
-@cilik_cmd(pattern="firmware(?: |$)(.*)")
+@bdrl_cmd(pattern="firmware(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -33,7 +33,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@cilik_cmd(pattern="fastboot(?: |$)(.*)")
+@bdrl_cmd(pattern="fastboot(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -57,7 +57,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@cilik_cmd(pattern="recovery(?: |$)(.*)")
+@bdrl_cmd(pattern="recovery(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -81,7 +81,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@cilik_cmd(pattern="pb(?: |$)(.*)")
+@bdrl_cmd(pattern="pb(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -105,7 +105,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@cilik_cmd(pattern="of(?: |$)(.*)")
+@bdrl_cmd(pattern="of(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -129,7 +129,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@cilik_cmd(pattern="eu(?: |$)(.*)")
+@bdrl_cmd(pattern="eu(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -153,7 +153,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@cilik_cmd(pattern="vendor(?: |$)(.*)")
+@bdrl_cmd(pattern="vendor(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -177,7 +177,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@cilik_cmd(pattern="specs(?: |$)(.*)")
+@bdrl_cmd(pattern="specs(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
