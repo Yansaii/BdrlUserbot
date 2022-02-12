@@ -16,7 +16,7 @@ from telethon.tl.types import Channel, Chat, User
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 from userbot.utils import edit_delete, edit_or_reply
 
 # STRINGS
@@ -35,7 +35,7 @@ def inline_mention(user):
     return f"[{full_name}](tg://user?id={user.id})"
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"stats$"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"stats$"))
 async def stats(
     event: NewMessage.Event,
 ) -> None:
@@ -109,7 +109,7 @@ async def stats(
     await stat.edit(response)
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"(ustat|deteksi|ustats)(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"(ustat|deteksi|ustats)(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
