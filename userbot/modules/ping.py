@@ -14,7 +14,7 @@ from speedtest import Speedtest
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, DEVS, StartTime, bot
 from userbot.events import register
-from userbot.utils import edit_or_reply, humanbytes, cilik_cmd
+from userbot.utils import edit_or_reply, humanbytes, bdrl_cmd
 
 absen = [
     "**Hadir bang grey** 😁",
@@ -86,7 +86,7 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@cilik_cmd(pattern="ping$")
+@bdrl_cmd(pattern="ping$")
 async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -106,7 +106,7 @@ async def _(ping):
     )
 
     
-@cilik_cmd(pattern="peng$")
+@bdrl_cmd(pattern="peng$")
 async def _(peng):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -127,7 +127,7 @@ async def _(peng):
     )
 
 
-@cilik_cmd(pattern="pink$")
+@bdrl_cmd(pattern="pink$")
 async def _(pink):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -158,7 +158,7 @@ async def _(pink):
     )
 
     
-@cilik_cmd(pattern="speed$")
+@bdrl_cmd(pattern="speed$")
 async def _(speed):
     """For .speedtest command, use SpeedTest to check server speeds."""
     xxnx = await edit_or_reply(speed, "`Running speed test...`")
@@ -190,7 +190,7 @@ async def _(speed):
     )
 
 
-@cilik_cmd(pattern="pong$")
+@bdrl_cmd(pattern="pong$")
 async def _(pong):
     """For .ping command, ping the userbot from any chat."""
     start = datetime.now()
@@ -221,7 +221,7 @@ async def grey(ganteng):
     await ganteng.reply(random.choice(roas))
 
 
-@cilik_cmd(pattern="pung(?: |$)(.*)")
+@bdrl_cmd(pattern="pung(?: |$)(.*)")
 async def _(event):  
     if event.fwd_from:
         return
