@@ -11,10 +11,10 @@ from telethon.tl.types import DocumentAttributeFilename
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.utils import bash, edit_or_reply, cilik_cmd, progress
+from userbot.utils import bash, edit_or_reply, bdrl_cmd, progress
 
 
-@cilik_cmd(pattern="ssvideo(?: |$)(.*)")
+@bdrl_cmd(pattern="ssvideo(?: |$)(.*)")
 async def ssvideo(event):
     if not event.reply_to_msg_id:
         await edit_or_reply(event, "`Reply to any media..`")
