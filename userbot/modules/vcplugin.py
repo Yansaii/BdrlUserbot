@@ -2,6 +2,7 @@
 # Thanks To @tofik_dn || https://github.com/tofikdn
 # FROM Man-Userbot
 # ReCode by @greyyvbss
+# Recode2 by @BukanBdrl
 
 from pytgcalls import StreamType
 from pytgcalls.types import Update
@@ -21,7 +22,7 @@ from userbot import CMD_HELP
 from userbot import PLAY_PIC as fotoplay
 from userbot import QUEUE_PIC as ngantri
 from userbot import call_py, owner
-from userbot.utils import bash, edit_delete, edit_or_reply, cilik_cmd
+from userbot.utils import bash, edit_delete, edit_or_reply, bdrl_cmd
 from userbot.utils.chattitle import CHAT_TITLE
 from userbot.utils.queues.queues import (
     QUEUE,
@@ -108,7 +109,7 @@ async def skip_current_song(chat_id: int):
     return [songname, link, type]
 
 
-@cilik_cmd(pattern="play(?:\s|$)([\s\S]*)")
+@bdrl_cmd(pattern="play(?:\s|$)([\s\S]*)")
 async def vc_play(event):
     title = event.pattern_match.group(1)
     replied = await event.get_reply_message()
@@ -200,7 +201,7 @@ async def vc_play(event):
                 await botman.edit(f"`{ep}`")
 
 
-@cilik_cmd(pattern="vplay(?:\s|$)([\s\S]*)")
+@bdrl_cmd(pattern="vplay(?:\s|$)([\s\S]*)")
 async def vc_vplay(event):
     title = event.pattern_match.group(1)
     replied = await event.get_reply_message()
@@ -339,7 +340,7 @@ async def vc_vplay(event):
                     await xnxx.edit(f"`{ep}`")
 
 
-@cilik_cmd(pattern="end$")
+@bdrl_cmd(pattern="end$")
 async def vc_end(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -353,7 +354,7 @@ async def vc_end(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@cilik_cmd(pattern="skip(?:\s|$)([\s\S]*)")
+@bdrl_cmd(pattern="skip(?:\s|$)([\s\S]*)")
 async def vc_skip(event):
     chat_id = event.chat_id
     if len(event.text.split()) < 2:
@@ -382,7 +383,7 @@ async def vc_skip(event):
             await event.edit(DELQUE)
 
 
-@cilik_cmd(pattern="pause$")
+@bdrl_cmd(pattern="pause$")
 async def vc_pause(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -395,7 +396,7 @@ async def vc_pause(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@cilik_cmd(pattern="resume$")
+@bdrl_cmd(pattern="resume$")
 async def vc_resume(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -408,7 +409,7 @@ async def vc_resume(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@cilik_cmd(pattern=r"volume(?: |$)(.*)")
+@bdrl_cmd(pattern=r"volume(?: |$)(.*)")
 async def vc_volume(event):
     query = event.pattern_match.group(1)
     chat = await event.get_chat()
@@ -431,7 +432,7 @@ async def vc_volume(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@cilik_cmd(pattern="playlist$")
+@bdrl_cmd(pattern="playlist$")
 async def vc_playlist(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
