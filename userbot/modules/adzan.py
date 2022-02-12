@@ -11,7 +11,7 @@ from userbot.modules.sql_helper.globals import gvarstatus
 from userbot.utils import edit_delete, edit_or_reply, cilik_cmd
 
 
-@cilik_cmd(pattern="adzan(?:\s|$)([\s\S]*)")
+@bdrl_cmd(pattern="adzan(?:\s|$)([\s\S]*)")
 async def get_adzan(adzan):
     "Shows you the Islamic prayer times of the given city name"
     input_str = adzan.pattern_match.group(1)
