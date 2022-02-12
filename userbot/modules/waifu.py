@@ -5,10 +5,10 @@ import random
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import deEmojify, edit_delete, cilik_cmd
+from userbot.utils import deEmojify, edit_delete, bdrl_cmd
 
 
-@cilik_cmd(pattern="waifu(?: |$)(.*)")
+@bdrl_cmd(pattern="waifu(?: |$)(.*)")
 async def waifu(animu):
     text = animu.pattern_match.group(1)
     if not text:
