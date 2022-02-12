@@ -6,10 +6,10 @@
 from time import sleep
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, cilik_cmd
+from userbot.utils import edit_or_reply, bdrl_cmd
 
 
-@cilik_cmd(pattern="hai(?: |$)(.*)")
+@bdrl_cmd(pattern="hai(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"**Hai ,  Assalamualaikum**")
     sleep(1)
@@ -22,7 +22,7 @@ async def _(event):
     await xx.edit("__GELAYY__🤮")    
    
 
-@cilik_cmd(pattern="kntl(?: |$)(.*)")
+@bdrl_cmd(pattern="kntl(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"Tau kh kalian wahai tuan-tuan??")
     sleep(1)
@@ -39,7 +39,7 @@ async def _(event):
     await xx.edit("kalian **Kontol**")
 
 
-@cilik_cmd(pattern="Phe(?: |$)(.*)")
+@bdrl_cmd(pattern="Phe(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"**ga usah sok keras deh bg**")
     sleep(2)
@@ -50,7 +50,7 @@ async def _(event):
     await xx.edit("**ga ngaruh di rl bg.**")    
 
 
-@cilik_cmd(pattern="phe(?: |$)(.*)")
+@bdrl_cmd(pattern="phe(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"**ga usah sok keras deh bg**")
     sleep(2)
@@ -61,7 +61,7 @@ async def _(event):
     await xx.edit("**ga ngaruh di rl bg**")
     
     
-@cilik_cmd(pattern="alay(?: |$)(.*)")
+@bdrl_cmd(pattern="alay(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"eh kamu, iya kamu")
     sleep(1)
@@ -73,7 +73,7 @@ async def _(event):
     sleep(1)
     await xx.edit("pantes **NORAK**")
     
-@cilik_cmd(pattern="jawa(?: |$)(.*)")
+@bdrl_cmd(pattern="jawa(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"baik")
     sleep(1)
@@ -109,7 +109,7 @@ async def _(event):
     sleep(1)
     await xx.edit("eh salah salah, \nBersama **Jawa** Membangun Negri")
     
-@cilik_cmd(pattern="erpe(?: |$)(.*)")
+@bdrl_cmd(pattern="erpe(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"Hai, Kamu Anak Erpe Ya")
     sleep(1)
@@ -130,7 +130,7 @@ async def _(event):
     await xx.edit("Lari Ada Plastik KePanasan")
     
     
-@cilik_cmd(pattern="lopyu(?: |$)(.*)")
+@bdrl_cmd(pattern="lopyu(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"`Cuma Mau Bilang`")
     sleep(1)
@@ -151,7 +151,7 @@ async def _(event):
     await xx.edit("`I LOVE YOU 💞`")
     
     
-@cilik_cmd(pattern="hujan(?: |$)(.*)")
+@bdrl_cmd(pattern="hujan(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"`H`")
     await xx.edit("`Hm`")
@@ -209,7 +209,7 @@ async def _(event):
     await xx.edit("`Dah la besok besok ga mau lagi`")
 
     
-@cilik_cmd(pattern="ange(?: |$)(.*)")
+@bdrl_cmd(pattern="ange(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"`Ayanggggg😖`")
     sleep(1)
@@ -218,7 +218,7 @@ async def _(event):
     await xx.edit("`Ayukkk Ewean Ayanggg🤤`")
 
 
-@cilik_cmd(pattern="engas(?: |$)(.*)")
+@bdrl_cmd(pattern="engas(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"Udah nggak kuat nahan")
     sleep(1)
@@ -237,14 +237,14 @@ async def _(event):
     await xx.edit("Tapi pake pengaman")
   
 
-@cilik_cmd(pattern="dahla(?: |$)(.*)")
+@bdrl_cmd(pattern="dahla(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"**`Ayo Menyerah`**")
     sleep(2)
     await xx.edit("**`Ngapain Semangat`**")
 
     
-@cilik_cmd(pattern="ehm(?: |$)(.*)")
+@bdrl_cmd(pattern="ehm(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"Eh..")
     sleep(2)
@@ -257,7 +257,7 @@ async def _(event):
 
 # Nih buat lo yang sangean anjg.
 
-@cilik_cmd(pattern="vc(?: |$)(.*)")
+@bdrl_cmd(pattern="vc(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"Kaa 🥺")
     sleep(2)
