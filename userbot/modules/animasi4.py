@@ -2,10 +2,10 @@
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"thanks(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"thanks(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("●▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬●\n"
                      "▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄\n"
@@ -17,7 +17,7 @@ async def _(typew):
                      "●▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬●")
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"malam(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"malam(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("╔═╦═╦╗╔═╦══╦═╦══╗\n"
                      "║═╣═╣║║╬║║║║╬╠╗╔╝\n"
@@ -29,7 +29,7 @@ async def _(typew):
                      "╚╩╩╩╩╩═╩╩╩╩╩╝")
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"rumah(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"rumah(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("**GAMBAR RUMAH**\n"
                      "╱◥◣\n"
@@ -40,7 +40,7 @@ async def _(typew):
                      "๑۩๑๑۩๑๑ ۩๑๑۩๑▓๑۩๑๑۩๑")
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"join(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"join(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("_/﹋\\_\n"
                      "(҂`_´)\n"
@@ -49,7 +49,7 @@ async def _(typew):
                      "\n**ᴊᴏɪɴ ʟɪɴᴋ ᴅɪ ʙɪᴏ😡**")
     
     
-@bot.on(cilik_cmd(outgoing=True, pattern=r"lari(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"lari(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("──▄█▀█▄─────────██\n"
                      "▄████████▄───▄▀█▄▄▄▄\n"
@@ -59,7 +59,7 @@ async def _(typew):
                      " **LARI IPINN**\n")
     
     
-@bot.on(cilik_cmd(outgoing=True, pattern=r"mobil(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"mobil(?: |$)(.*)"))
 async def _(typew):
     await typew.edit("──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▌\n"
                      "───▄▄██▌█░░░░░░░░░░░░▐\n"
