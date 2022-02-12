@@ -24,7 +24,7 @@ from telethon import __version__, version
 from userbot import ALIVE_EMOJI, ALIVE_LOGO, ALIVE_TEKS_CUSTOM, BOT_VER, CHANNEL
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, GROUP, StartTime, bot
-from userbot.utils import bash, edit_or_reply, cilik_cmd
+from userbot.utils import bash, edit_or_reply, bdrl_cmd
 
 from .ping import get_readable_time
 
@@ -38,7 +38,7 @@ emoji = ALIVE_EMOJI
 alive_text = ALIVE_TEKS_CUSTOM
 
 
-@cilik_cmd(
+@bdrl_cmd(
     pattern="sysinfo$",
 )
 async def _(e):
@@ -53,7 +53,7 @@ async def _(e):
     remove("neo.txt")
 
 
-@cilik_cmd(pattern=r"spc")
+@bdrl_cmd(pattern=r"spc")
 async def psu(event):
     uname = platform.uname()
     softw = "**Informasi Sistem**\n"
@@ -109,7 +109,7 @@ def get_size(bytes, suffix="B"):
         bytes /= factor
 
 
-@cilik_cmd(pattern="sysd$")
+@bdrl_cmd(pattern="sysd$")
 async def sysdetails(sysd):
     if not sysd.text[0].isalpha() and sysd.text[0] not in ("/", "#", "@", "!"):
         try:
@@ -128,7 +128,7 @@ async def sysdetails(sysd):
             await edit_or_reply(sysd, "**Install neofetch Terlebih dahulu!!**")
 
 
-@cilik_cmd(pattern="botver$")
+@bdrl_cmd(pattern="botver$")
 async def bot_ver(event):
     if event.text[0].isalpha() or event.text[0] in ("/", "#", "@", "!"):
         return
@@ -165,7 +165,7 @@ async def bot_ver(event):
         )
 
 
-@cilik_cmd(pattern="(?:alive|on)\s?(.)?")
+@bdrl_cmd(pattern="(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
