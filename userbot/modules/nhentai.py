@@ -11,11 +11,11 @@ from natsort import natsorted
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 from userbot.utils import post_to_telegraph
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"nhentai(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"nhentai(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
