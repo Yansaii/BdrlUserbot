@@ -23,17 +23,17 @@ from telethon.tl.functions.contacts import UnblockRequest
 from userbot import BOT_USERNAME
 from userbot import CMD_HANDLER as cmd
 from userbot import bot
-from userbot.utils import edit_or_reply, cilik_cmd
+from userbot.utils import edit_or_reply, bdrl_cmd
 
 
-@cilik_cmd(pattern="helpme")
+@bdrl_cmd(pattern="helpme")
 async def _(event):
     if event.fwd_from:
         return
     if BOT_USERNAME is not None:
         chat = "@Botfather"
         try:
-            results = await event.client.inline_query(BOT_USERNAME, "@CilikSupport")
+            results = await event.client.inline_query(BOT_USERNAME, "@BdrlSupporrt")
             await results[0].click(
                 event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
