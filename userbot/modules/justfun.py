@@ -3,10 +3,10 @@
 # If You Kang It Don't Delete / Warning!! Jangan Hapus Ini!!!
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"xogame(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"xogame(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -19,10 +19,10 @@ async def _(event):
     await event.delete()
 
 
-# Recode by @greyyvbss
+# Recode by @BukanBdrl
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"wp(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"wp(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -35,10 +35,10 @@ async def _(event):
     await event.delete()
 
 
-# Recode by @greyyvbss
+# Recode by @BukanBdrl
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"mod(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"mod(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -71,7 +71,7 @@ CMD_HELP.update(
         "secretchat": f"**Plugin : **`secretchat`\
         \n\n  •  **Syntax :** `{cmd}wp <teks> <username/ID>`\
         \n  •  **Function : **Memberikan pesan rahasia haya orang yang di tag yang bisa melihat\
-        \n  •  **Example  : **{cmd}wp aku syng kmu @Pocongonlen\
+        \n  •  **Example  : **{cmd}wp aku syng kmu @BukanBdrl\
     "
     }
 )
