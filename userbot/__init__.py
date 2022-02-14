@@ -6,6 +6,7 @@
 # inline credit @keselekpermen69
 # From Man-Userbot @mrismanaziz
 # Recode by @greyyvbss
+# Recode2 by @BukanBdrl
 """ Userbot initialization. """
 
 import logging
@@ -91,7 +92,7 @@ if CONFIG_CHECK:
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/grey423/Reforestation/master/DEVS.json"
+        "https://raw.githubusercontent.com/Yansaii/Reforestation/master/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
@@ -159,7 +160,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/grey423/CilikUserbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Yansaii/Bdrl-Ubot.git"
 )
 
 # SQL Database URI
@@ -202,16 +203,16 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Cilik-Userbot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Bdrl-Ubot")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✪")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✰")
 
 # Custom Emoji Alive
 INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "✪")
+ICON_HELP = os.environ.get("ICON_HELP", "✰")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -227,7 +228,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "CilikUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Bdrl-Ubot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "1.0")
@@ -346,7 +347,7 @@ async def check_botlog_chatid() -> None:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**CilikUserBot v{BOT_VER} is back up and running!**\n\n"
+        f"**BdrlUserBot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -527,21 +528,21 @@ with bot:
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**✪ Cilik-Userbot Inline Menu ✪**\n\n✪ **Owner** [{user.first_name}](tg://user?id={user.id})\n✪ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✰ Bdrl-Ubot Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository CilikUserbot",
-                    url="https://t.me/CilikSupport",
+                    description="Repository Bdrl-Ubot",
+                    url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Cilik-UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner Repo :** [Grey](https://t.me/greyyvbss)\n✪ **Support :** @CilikSupport\n✪ **Repository :** [CilikUserbot](https://github.com/grey423/CilikUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Bdrl-Ubot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BukanBdrl)\n✰ **Support :** @BdrlSupporrt\n✰ **Repository :** [Bdrl-Ubot](https://github.com/Yansaii/Bdrl-Ubot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/CilikSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/grey423/CilikUserbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/Bdrl-Ubot"
                             ),
                         ],
                     ],
@@ -581,16 +582,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✪ Cilik-Userbot ✪",
-                    description="CilikUserBot | Telethon",
-                    url="https://t.me/CilikSupport",
+                    title="✰ Bdrl-Ubot ✰",
+                    description="Bdrl-Ubot | Telethon",
+                    url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Cilik-UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✪ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✪ **Support:** @CilikSupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Bdrl-Ubot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @BdrlSupporrt\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/CilikSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/grey423/CilikUserbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/Bdrl-Ubot"
                             ),
                         ],
                     ],
@@ -605,7 +606,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**✪ Cilik-Userbot Inline Menu ✪**\n\n✪ **Owner** [{user.first_name}](tg://user?id={user.id})\n✪ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**✰ Bdrl-Ubot Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
