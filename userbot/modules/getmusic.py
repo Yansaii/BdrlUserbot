@@ -24,7 +24,7 @@ from userbot import (
     bot,
     lastfm,
 )
-from userbot.utils import bash, chrome, edit_or_reply, cilik_cmd, progress
+from userbot.utils import bash, chrome, edit_or_reply, bdrl_cmd, progress
 from userbot.utils.FastTelethon import upload_file
 
 
@@ -58,7 +58,7 @@ async def getmusicvideo(cat):
     await bash(command)
 
 
-@cilik_cmd(pattern="song (.*)")
+@bdrl_cmd(pattern="song (.*)")
 async def _(event):
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
@@ -93,7 +93,7 @@ async def _(event):
     await bash("rm -rf *.mp3")
 
 
-@cilik_cmd(pattern="vsong(?: |$)(.*)")
+@bdrl_cmd(pattern="vsong(?: |$)(.*)")
 async def _(event):
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
@@ -160,7 +160,7 @@ async def _(event):
         return
 
 
-@cilik_cmd(pattern="smd (?:(now)|(.*) - (.*))")
+@bdrl_cmd(pattern="smd (?:(now)|(.*) - (.*))")
 async def _(event):
     if event.fwd_from:
         return
@@ -207,7 +207,7 @@ async def _(event):
         )
 
 
-@cilik_cmd(pattern="net (?:(now)|(.*) - (.*))")
+@bdrl_cmd(pattern="net (?:(now)|(.*) - (.*))")
 async def _(event):
     if event.fwd_from:
         return
@@ -251,7 +251,7 @@ async def _(event):
         )
 
 
-@cilik_cmd(pattern="mhb(?: |$)(.*)")
+@bdrl_cmd(pattern="mhb(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -284,7 +284,7 @@ async def _(event):
         )
 
 
-@cilik_cmd(pattern="deez (.+?|) (FLAC|MP3\_320|MP3\_256|MP3\_128)")
+@bdrl_cmd(pattern="deez (.+?|) (FLAC|MP3\_320|MP3\_256|MP3\_128)")
 async def _(event):
     """DeezLoader by @An0nimia. Ported for UniBorg by @SpEcHlDe"""
     if event.fwd_from:
