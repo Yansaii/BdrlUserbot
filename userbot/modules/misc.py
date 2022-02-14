@@ -4,6 +4,7 @@
 # You can find misc modules, which dont fit in anything xD
 # Copyright (C) 2022 @mrismanaziz
 # ReCode by @greyyvbss
+# Recode2 by @BukanBdrl
 
 import io
 import os
@@ -22,7 +23,7 @@ from PIL import Image
 from userbot import BOT_VER, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, SUDO_USERS
-from userbot.utils import edit_or_reply, cilik_cmd, time_formatter
+from userbot.utils import edit_or_reply, bdrl_cmd, time_formatter
 
 # ================= CONSTANT =================
 HEROKU_APP = from_key(HEROKU_API_KEY).apps()[HEROKU_APP_NAME]
@@ -35,7 +36,7 @@ repo = Repo()
 branch = repo.active_branch.name
 
 
-@cilik_cmd(pattern="sleep ([0-9]+)$")
+@bdrl_cmd(pattern="sleep ([0-9]+)$")
 async def sleepybot(time):
     if time.sender_id in SUDO_USERS:
         return
@@ -51,7 +52,7 @@ async def sleepybot(time):
     await xx.edit("**Oke, saya sudah bangun sekarang.**")
 
 
-@cilik_cmd(pattern="shutdown$")
+@bdrl_cmd(pattern="shutdown$")
 async def shutdown_bot(event):
     if event.fwd_from:
         return
@@ -61,39 +62,39 @@ async def shutdown_bot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**Cilik Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**Bdrl Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(event, "**Cilik Userbot Berhasil di matikan!**")
+    await edit_or_reply(event, "**Bdrl Userbot Berhasil di matikan!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
         sys.exit(0)
 
 
-@cilik_cmd(pattern="restart$")
+@bdrl_cmd(pattern="restart$")
 async def restart_bot(event):
     if event.sender_id in SUDO_USERS:
         return
-    await edit_or_reply(event, "**Cilik Userbot Berhasil di Restart**")
+    await edit_or_reply(event, "**Bdrl Userbot Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**Cilik Userbot Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**Bdrl Userbot Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
 
 
-@cilik_cmd(pattern="readme$")
+@bdrl_cmd(pattern="readme$")
 async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n┌❏ [Userbot Repo](https://github.com/grey423/CilikUserbot/blob/PocongUserbot/README.md)"
+        "\n┌❏ [Userbot Repo](https://github.com/Yansaii/Bdrl-Ubot/blob/Bdrl-Ubot/README.md)"
         "\n└❏ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
     )
 
 
-@cilik_cmd(pattern="repeat (.*)")
+@bdrl_cmd(pattern="repeat (.*)")
 async def repeat(event):
     cnt, txt = event.pattern_match.group(1).split(" ", 1)
     replyCount = int(cnt)
@@ -107,20 +108,20 @@ async def repeat(event):
     await edit_or_reply(event, replyText)
 
 
-@cilik_cmd(pattern="repo$")
+@bdrl_cmd(pattern="repo$")
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, Saya Menggunakan  **Cilik Userbot** \n\n"
+        f"**Hey**, Saya Menggunakan  **Bdrl Ubott** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [Cilik Userbot](t.me/CilikSupport)\n"
-        f"├❏ **Channel  :** [Cilik Userbot](t.me/greyyvbss)\n"
-        f"├❏ **OwnerRepo :** [Grey](t.me/greyyvbss)\n"
-        f"└❏ **Repo :** [Cilik Userbot](https://github.com/grey423/CilikUserbot)\n"
+        f"├❏ **GroupSupport :** [Bdrl Ubot](t.me/BdrlSupporrt)\n"
+        f"├❏ **Channel  :** [Bdrl Ubot](t.me/RuangTerbukaa)\n"
+        f"├❏ **OwnerRepo :** [Bdrl](t.me/BukanBdrl)\n"
+        f"└❏ **Repo :** [Bdrl Ubot](https://github.com/Yansaii/Bdrl-Ubot)\n"
     )
 
 
-@cilik_cmd(pattern="string$")
+@bdrl_cmd(pattern="string$")
 async def string_is_here(event):
     await edit_or_reply(
         event,
@@ -132,7 +133,7 @@ async def string_is_here(event):
     )
 
 
-@cilik_cmd(pattern="raw$")
+@bdrl_cmd(pattern="raw$")
 async def raw(event):
     the_real_message = None
     reply_to_id = None
@@ -158,7 +159,7 @@ async def raw(event):
         )
 
 
-@cilik_cmd(pattern="reverse(?: |$)(\d*)")
+@bdrl_cmd(pattern="reverse(?: |$)(\d*)")
 async def okgoogle(img):
     if os.path.isfile("okgoogle.png"):
         os.remove("okgoogle.png")
@@ -251,7 +252,7 @@ async def scam(results, lim):
     return imglinks
 
 
-@cilik_cmd(pattern="send (.*)")
+@bdrl_cmd(pattern="send (.*)")
 async def send(event):
     if not event.is_reply:
         return await edit_or_reply(
@@ -294,11 +295,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository PocongUserbot`\
+        "repo": f"**Plugin : **`Repository BdrlUserbot`\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository PocongUserbot\
+        \n  •  **Function : **Menampilan link Repository BdrlUserbot\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String PocongUserbot\
+        \n  •  **Function : **Menampilan link String BdrlUserbot\
     "
     }
 )
@@ -322,7 +323,7 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}shutdown`\
         \n  •  **Function : **Mematikan Userbot.\
         \n\n  •  **Syntax :** `{cmd} sleep`\
-        \n  •  **Function : **Biarkan PocongUserbot tidur selama waktu yg ditetapkan.\
+        \n  •  **Function : **Biarkan BdrlUserbot tidur selama waktu yg ditetapkan.\
     "
     }
 )
