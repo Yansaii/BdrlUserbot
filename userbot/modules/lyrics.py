@@ -2,15 +2,17 @@
 # API by @tofik_dn || https://github.com/tofikdn
 # FROM Man-Userbot
 # Recode by @greyyvbss
+# Recode2 by @BukanBdrl
+
 
 import requests
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, cilik_cmd
+from userbot.utils import edit_or_reply, bdrl_cmd
 
 
-@cilik_cmd(pattern="lyrics(?:\s|$)([\s\S]*)")
+@bdrl_cmd(pattern="lyrics(?:\s|$)([\s\S]*)")
 async def _(event):
     query = event.pattern_match.group(1)
     if not query:
