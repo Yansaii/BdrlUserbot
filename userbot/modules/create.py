@@ -9,10 +9,10 @@ from telethon.tl import functions
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"buat (gb|g|c)(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"buat (gb|g|c)(?: |$)(.*)"))
 async def telegraphs(grop):
     """For .create command, Creating New Group & Channel"""
     if grop.text[0].isalpha() or grop.text[0] in ("/", "#", "@", "!"):
