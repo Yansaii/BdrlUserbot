@@ -12,12 +12,12 @@ from telethon.tl.types import DocumentAttributeFilename
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.utils import bash, edit_delete, edit_or_reply, cilik_cmd
+from userbot.utils import bash, edit_delete, edit_or_reply, bdrl_cmd
 
 bground = "black"
 
 
-@cilik_cmd(pattern="(ascii|asciis)$")
+@bdrl_cmd(pattern="(ascii|asciis)$")
 async def _(event):
     if not event.reply_to_msg_id:
         await edit_delete(event, "**Mohon Balas Ke Media..**")
@@ -120,7 +120,7 @@ async def random_color():
     ]
 
 
-@cilik_cmd(pattern="asciibg(?: |$)(.*)")
+@bdrl_cmd(pattern="asciibg(?: |$)(.*)")
 async def _(event):
     BG = event.pattern_match.group(1)
     if BG.isnumeric():
