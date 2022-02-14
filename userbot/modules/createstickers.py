@@ -12,10 +12,10 @@ from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterDocument
 
 from userbot import bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"cs(?: |$)(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"cs(?: |$)(.*)"))
 async def sticklet(event):
     R = random.randint(0, 256)
     G = random.randint(0, 256)
