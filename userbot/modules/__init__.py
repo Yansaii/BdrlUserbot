@@ -6,6 +6,8 @@
 # Ported by @mrismanaziz
 # FROM Man-Userbot
 # Recode by @greyyvbss
+# Recode2 by @BukanBdrl
+
 
 import sys
 
