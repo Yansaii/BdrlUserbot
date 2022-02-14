@@ -1,15 +1,17 @@
 # Ported by X_ImFine
 # From Man-Userbot @mrismanaziz
 # Recode by @greyyvbss
+# Recode2 by @BukanBdrl
+
 
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, owner
-from userbot.utils import get_user_from_event, cilik_cmd
+from userbot.utils import get_user_from_event, bdrl_cmd
 
 
-@cilik_cmd(pattern="gkick(?: |$)(.*)")
+@bdrl_cmd(pattern="gkick(?: |$)(.*)")
 async def gspide(rk):
     lazy = rk
     sender = await lazy.get_sender()
