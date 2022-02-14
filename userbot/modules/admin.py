@@ -6,6 +6,8 @@
 # Ported @mrismanaziz
 # FROM Man-Userbot
 # Recode by @greyyvbss
+# Recode2 by @BukanBdrl
+
 
 import logging
 from asyncio import sleep
