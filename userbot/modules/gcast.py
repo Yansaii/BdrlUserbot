@@ -7,6 +7,7 @@
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
 # recode by @greyyvbss
+# Recode2 By @BukanBdrl
 import asyncio
 
 from requests import get
@@ -14,16 +15,16 @@ from telethon.errors.rpcerrorlist import FloodWaitError
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, DEVS
-from userbot.utils import edit_delete, edit_or_reply, cilik_cmd
+from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
 
 while 0 < 6:
     _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/grey423/Reforestation/master/blacklistgcast.json"
+        "https://raw.githubusercontent.com/Yansaii/Reforestation/master/blacklistgcast.json"
     )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001687155877, -1001473548283]
+        GCAST_BLACKLIST = [-1001687155877, -1001473548283, -1001653425944]
         break
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
@@ -31,7 +32,7 @@ while 0 < 6:
 del _GCAST_BLACKLIST
 
 
-@cilik_cmd(pattern="gcast(?: |$)(.*)")
+@bdrl_cmd(pattern="gcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if xx:
@@ -62,7 +63,7 @@ async def gcast(event):
     )
 
 
-@cilik_cmd(pattern="gucast(?: |$)(.*)")
+@bdrl_cmd(pattern="gucast(?: |$)(.*)")
 async def gucast(event):
     xx = event.pattern_match.group(1)
     if xx:
