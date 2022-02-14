@@ -8,12 +8,12 @@ from asyncio import sleep
 from userbot import BOTLOG, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, LOGS, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 from userbot.modules.sql_helper import broadcast_sql as sql
 from userbot.utils import parse_pre
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"sendto ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"sendto ?(.*)"))
 async def catbroadcast_send(event):
     if event.fwd_from:
         return
@@ -59,7 +59,7 @@ async def catbroadcast_send(event):
         )
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"fwdto ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"fwdto ?(.*)"))
 async def catbroadcast_send(event):
     if event.fwd_from:
         return
@@ -105,7 +105,7 @@ async def catbroadcast_send(event):
         )
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"addto ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"addto ?(.*)"))
 async def catbroadcast_add(event):
     if event.fwd_from:
         return
@@ -141,7 +141,7 @@ async def catbroadcast_add(event):
             )
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"rmfrom ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"rmfrom ?(.*)"))
 async def catbroadcast_remove(event):
     if event.fwd_from:
         return
@@ -177,7 +177,7 @@ async def catbroadcast_remove(event):
             )
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"bclist ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"bclist ?(.*)"))
 async def catbroadcast_list(event):
     if event.fwd_from:
         return
@@ -217,7 +217,7 @@ async def catbroadcast_list(event):
     await catevent.edit(finaloutput)
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"bclistall ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"bclistall ?(.*)"))
 async def catbroadcast_list(event):
     if event.fwd_from:
         return
@@ -233,7 +233,7 @@ async def catbroadcast_list(event):
     await event.efit(resultext)
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"frmfrom ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"frmfrom ?(.*)"))
 async def catbroadcast_remove(event):
     if event.fwd_from:
         return
@@ -290,7 +290,7 @@ async def catbroadcast_remove(event):
             )
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"delc ?(.*)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"delc ?(.*)"))
 async def catbroadcast_delete(event):
     if event.fwd_from:
         return
