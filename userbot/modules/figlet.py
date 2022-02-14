@@ -12,11 +12,11 @@ import pyfiglet
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import cilik_cmd
+from userbot.events import bdrl_cmd
 from userbot.utils import deEmojify
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"figlet (\w+) (.+)"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"figlet (\w+) (.+)"))
 async def figlet(event):
     if event.fwd_from:
         return
