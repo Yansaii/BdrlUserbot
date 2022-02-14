@@ -2,7 +2,9 @@
 # Copyright (C) 2021 TeamUltroid <https://github.com/TeamUltroid/Ultroid>
 # Copyright (C) 2022 Man-Userbot
 # ReCode by @greyyvbsss
+# Recode2 by @BukanBdrl
 # From Man-Userbot
+
 
 import io
 import re
