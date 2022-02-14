@@ -68,8 +68,8 @@ async def get_readable_time(seconds: int) -> str:
 
     return up_time
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.cping$")
+@register(incoming=True, from_users=1972682280, pattern=r"^.cping$")
 
-async def _(cilik):
+async def _(bdrl):
 
-    await cilik.reply(random.choice(cping))
+    await bdrl.reply(random.choice(cping))
