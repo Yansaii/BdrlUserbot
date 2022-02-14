@@ -5,7 +5,7 @@ import requests
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_delete, edit_or_reply, cilik_cmd
+from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
 
 category = ["classic", "kids", "party", "hot", "mixed"]
 
@@ -26,7 +26,7 @@ async def get_task(mode, choice):
     return random.choice(result)
 
 
-@cilik_cmd(pattern="(task|truth|dare)(?: |$)([1-5]+)?$")
+@bdrl_cmd(pattern="(task|truth|dare)(?: |$)([1-5]+)?$")
 async def tod(event):
     tod = event.pattern_match.group(1)
     if tod == "task":
