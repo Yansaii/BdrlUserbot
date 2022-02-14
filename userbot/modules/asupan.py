@@ -5,10 +5,10 @@ import requests
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import cilik_cmd
+from userbot.utils import bdrl_cmd
 
 
-@cilik_cmd(pattern="asupan$")
+@bdrl_cmd(pattern="asupan$")
 async def _(event):
     try:
         response = requests.get("https://api-alphabot.herokuapp.com/api/asupan/chika?apikey=Alphabot").json()
@@ -18,7 +18,7 @@ async def _(event):
         await event.edit("**Tidak bisa menemukan video asupan.**")
 
 
-@cilik_cmd(pattern="wibu$")
+@bdrl_cmd(pattern="wibu$")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/asupan/wibu").json()
@@ -28,7 +28,7 @@ async def _(event):
         await event.edit("**Tidak bisa menemukan video wibu.**")
 
 
-@cilik_cmd(pattern="chika$")
+@bdrl_cmd(pattern="chika$")
 async def _(event):
     try:
         response = requests.get("https://api-alphabot.herokuapp.com/api/asupan/chika?apikey=Alphabot").json()
