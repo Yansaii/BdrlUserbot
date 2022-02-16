@@ -63,7 +63,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@bot.on(cilik_cmd(pattern=r"bombs", outgoing=True))
+@bot.on(bdrl_cmd(pattern=r"bombs", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
