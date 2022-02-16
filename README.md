@@ -31,7 +31,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
-<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=Z3JleTQyMy9DaWxpa1VzZXJib3QgbWFpbg"> <img 
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsLVVib3QgbWFpbg"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
@@ -42,8 +42,8 @@ src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&log
 <details>
     <summary> <b>Update and support</b></summary><br/>
 
-<a href="https://t.me/CilikProject"><img src="https://img.shields.io/badge/Join-Channel%20Updates-purple.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/CilikSupport"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/BdrlSupporrt"><img src="https://img.shields.io/badge/Join-Channel%20Updates-purple.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/RuangTerbukaa"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </details>
 
 <details>
