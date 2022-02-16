@@ -44,7 +44,7 @@ USERNAME_TAKEN = "```Mohon Maaf, Username Itu Sudah Ada Yang Menggunakannya.```"
 # ===============================================================
 
 
-@bot.on(cilik_cmd(outgoing=True, pattern=r"reserved$"))
+@bot.on(bdrl_cmd(outgoing=True, pattern=r"reserved$"))
 async def mine(event):
     """For .reserved command, get a list of your reserved usernames."""
     result = await bot(GetAdminedPublicChannelsRequest())
