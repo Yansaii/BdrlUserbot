@@ -8,7 +8,7 @@ import requests
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.modules.sql_helper.globals import gvarstatus
-from userbot.utils import edit_delete, edit_or_reply
+from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
 
 
 @bdrl_cmd(pattern="adzan(?:\s|$)([\s\S]*)")
