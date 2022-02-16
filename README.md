@@ -27,7 +27,7 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Yansaii/Deploy"> <img 
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Yansaii/Bdrl-Ubot"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
