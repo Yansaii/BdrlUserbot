@@ -97,10 +97,10 @@ async def waiting():
     userbot = str(pybase64.b64decode("QFRFQU1TcXVhZFVzZXJib3RTdXBwb3J0"))[2:13]
     xuserbot = str(pybase64.b64decode("QFVzZXJib3RURUFNX1R1dG9yaWFs"))[2:17]
     try:
-        await bot(Mansiez(cilik))
+        await bot(Mansiez(bdrl))
     except BaseException:
         pass
     try:
-        await bot(Mansiez(xcilik))
+        await bot(Mansiez(xbdrl))
     except BaseException:
         pass
