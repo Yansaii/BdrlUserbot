@@ -1,10 +1,10 @@
 <h1 align="center"><img src="./resources/GeezFire.gif" width="35px">BDRL-UBOT<img src="./resources/GeezFire.gif" width="35px"></h1>
 <p align="center">
-    <img alt="CILIK VERSION" src="https://img.shields.io/badge/CILIK%20VERSION-4.+-brightgreen"/>
+    <img alt="BDRL VERSION" src="https://img.shields.io/badge/BDRL%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
-           <a href="https://travis-ci.com/grey423/CilikUserbot.svg?branch=main" /></a>
-    <a href="https://github.com/grey423/CilikUserbot/network/members"> <img src="https://img.shields.io/github/forks/grey423/CilikUserbot?logo=github&style=for-the-badge" /></a>
-    <a href="https://github.com/grey423/CilikUserbot"> <img src="https://img.shields.io/github/repo-size/grey423/CilikUserbot?logo=github&style=for-the-badge" /></a>
+           <a href="https://travis-ci.com/Yansaii/Bdrl-Ubot.svg?branch=main" /></a>
+    <a href="https://github.com/Yansaii/Bdrl-Ubot/network/members"> <img src="https://img.shields.io/github/forks/Yansaii/Bdrl-Ubot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/Yansaii/Bdrl-Ubot"> <img src="https://img.shields.io/github/repo-size/Yansaii/Bdrl-Ubot?logo=github&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.0-blue?style=for-the-badge&logo=appveyor"/>
    </p>
@@ -13,7 +13,7 @@
   <img src="">
 </p>
 
-Cilik-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+Bdel-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
@@ -27,7 +27,7 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Yansaii/Bdrl-Ubot"> <img 
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Yansaii/Deploy"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
@@ -42,7 +42,7 @@ src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&log
 <details>
     <summary> <b>Update and support</b></summary><br/>
 
-<a href="https://t.me/BdrlSupporrt"><img src="https://img.shields.io/badge/Join-Channel%20Updates-purple.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/BdrlBukan"><img src="https://img.shields.io/badge/Join-Channel%20Updates-purple.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/RuangTerbukaa"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </details>
 
