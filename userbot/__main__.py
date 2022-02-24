@@ -50,7 +50,7 @@ LOGS.info(
 LOGS.info(f"Bdrl-Ubot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
 
 
-async def cilik_userbot_on():
+async def bdrl_userbot_on():
     try:
         if BOTLOG_CHATID != 0:
             await bot.send_message(
