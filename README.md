@@ -31,7 +31,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
-<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsLVVib3QgbWFpbg"> <img 
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsVXNlcmJvdCBtYWlu"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
