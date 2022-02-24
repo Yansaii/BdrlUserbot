@@ -1,16 +1,16 @@
-<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">BDRL-UBOT<img src="./resources/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">BDRL-USERBOT<img src="./resources/GeezFire.gif" width="35px"></h1>
 <p align="center">
     <img alt="BDRL VERSION" src="https://img.shields.io/badge/BDRL%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
-           <a href="https://travis-ci.com/Yansaii/Bdrl-Ubot.svg?branch=main" /></a>
-    <a href="https://github.com/Yansaii/Bdrl-Ubot/network/members"> <img src="https://img.shields.io/github/forks/Yansaii/Bdrl-Ubot?logo=github&style=for-the-badge" /></a>
-    <a href="https://github.com/Yansaii/Bdrl-Ubot"> <img src="https://img.shields.io/github/repo-size/Yansaii/Bdrl-Ubot?logo=github&style=for-the-badge" /></a>
+           <a href="https://travis-ci.com/Yansaii/BdrlUserbot.svg?branch=main" /></a>
+    <a href="https://github.com/Yansaii/BdrlUserbot/network/members"> <img src="https://img.shields.io/github/forks/Yansaii/BdrlUserbot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/Yansaii/BdrlUserbot"> <img src="https://img.shields.io/github/repo-size/Yansaii/BdrlUserbot?logo=github&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.0-blue?style=for-the-badge&logo=appveyor"/>
    </p>
 
 <p align="center">
-  <img src="">
+  <img src="https://telegra.ph/file/6ff3f7d3258d7a0b412e7.jpg">
 </p>
 
 Bdel-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
