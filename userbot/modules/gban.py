@@ -43,7 +43,7 @@ async def handler(tele):
 
 
 @bot.on(bdrl_cmd(outgoing=True, pattern=r"gband(?: |$)(.*)"))
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cgband(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cgban(?: |$)(.*)")
 async def gben(userbot):
     dc = userbot
     sender = await dc.get_sender()
@@ -111,7 +111,7 @@ async def gben(userbot):
     )
 
 @bot.on(bdrl_cmd(outgoing=True, pattern=r"ungband(?: |$)(.*)"))
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cungband(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cungban(?: |$)(.*)")
 async def gunben(userbot):
     dc = userbot
     sender = await dc.get_sender()
@@ -140,7 +140,7 @@ async def gunben(userbot):
     if user:
         if user.id in DEVS:
             return await dark.edit(
-                "**Grey Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat saya**"
+                "**Bdrl Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat saya**"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
