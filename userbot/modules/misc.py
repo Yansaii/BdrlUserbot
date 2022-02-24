@@ -78,7 +78,7 @@ async def restart_bot(event):
     await edit_or_reply(event, "**Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**Bdrl Userbot Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -89,7 +89,7 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n┌❏ [Repo](https://github.com/Yansaii/BdrlUserbot/blob/Bdrl-Ubot/README.md)"
+        "\n┌❏ [Repo](https://github.com/Yansaii/BdrlUserbot/blob/BdrlUserbot/README.md)"
         "\n└❏ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
     )
 
@@ -112,12 +112,12 @@ async def repeat(event):
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, Saya Menggunakan  **Bdrl Ubott** \n\n"
+        f"**Hey**, Saya Menggunakan  **Bᴅʀʟ-Usᴇʀʙᴏᴛ** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [Bdrl Ubot](t.me/BdrlSupporrt)\n"
-        f"├❏ **Channel  :** [Bdrl Ubot](t.me/RuangTerbukaa)\n"
+        f"├❏ **GroupSupport :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
+        f"├❏ **Channel  :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
         f"├❏ **OwnerRepo :** [Bdrl](t.me/BdrlBukan)\n"
-        f"└❏ **Repo :** [Bdrl Ubot](https://github.com/Yansaii/BdrlUserbot)\n"
+        f"└❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
     )
 
 
