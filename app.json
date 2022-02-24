@@ -3,7 +3,7 @@
   "description": "[Bdrl-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
   "logo": "https://telegra.ph/file/6ff3f7d3258d7a0b412e7.jpg",
   "keywords": ["telegram", "userbot", "bdrluserbot", "modular", "python"],
-  "repository": "https://github.com/Yansaii/Bdrl-Userbot",
+  "repository": "https://github.com/Yansaii/BdrlUserbot",
   "stack": "container",
   "env": {
     "API_KEY": {
