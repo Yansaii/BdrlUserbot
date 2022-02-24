@@ -29,7 +29,7 @@ salam = [
     "**Wa'alaikumsalam ganteng** 🥰🥰",
     "**Wa'alaikumsalam WR WB** 👋🏻",
     "**Iyah Waalaikusalam** 🥵",
-    "**Wa'alaikumsalam bang Grey**",
+    "**Wa'alaikumsalam bang bdrl**",
     "**Wa'alaikumsalam** 🥰",
     "**Wa'alaikumsalan Warohmatullohi Wabarokatu**",
     "**Wa'alaikumsalam Ustad**",
@@ -43,9 +43,10 @@ pacar = [
     "**Mau ga bang jadi pacar aku?** 😁",
     "**Mending pc aku bang** 🥺",
     "**Main Sama Aku yuk**🥵🥵💦",
-    "**Grey Mau Aku Cium Ga??**🥵",
-    "**Grey I Love You**",
-    "**Grey Aku Sayang Kamu ,Mwahhh😘**",
+    "**Bdrl Mau Aku Cium Ga??**🥵",
+    "**Bdrl I Love You**",
+    "**Bdrl Aku Sayang Kamu ,Mwahhh😘**",
+    "**Lagi sange Bang Bdrl** 🥵",
 ]
 
 roas = [
@@ -91,18 +92,13 @@ async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**★**")
-    await xx.edit("**★★**")
-    await xx.edit("**★★★**")
-    await xx.edit("**◕‿- PONG!**")
+    await pong.edit("Pong!")
+    await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    user = await bot.get_me()
-    await xx.edit(
-        f"**PONG!!🏓**\n"
-        f"**Ping** - `%sms`\n"
-        f"**Uptime -** `{uptime}` \n"
-        f"**Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+    await pong.edit(
+        f"**Pong !!** `%sms` \n"
+        f"**Uptime **- `{uptime}`\n" % (duration)
     )
 
     
@@ -202,22 +198,22 @@ async def _(pong):
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
 @register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
-async def grey(ganteng):
+async def bdrl(ganteng):
     await ganteng.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^P$")
-async def grey(ganteng):
+@register(incoming=True, from_users=1883126074, pattern=r"^P$")
+async def bdrl(ganteng):
     await ganteng.reply(random.choice(salam))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.grey$")
-async def grey(ganteng):
+@register(incoming=True, from_users=1883126074, pattern=r"^.bdrl$")
+async def bdrl(ganteng):
     await ganteng.reply(random.choice(pacar))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.roasting$")
-async def grey(ganteng):
+@register(incoming=True, from_users=DEVS, pattern=r"^.roasting$")
+async def bdrl(ganteng):
     await ganteng.reply(random.choice(roas))
 
 
