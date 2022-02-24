@@ -17,12 +17,13 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, bdrl_cmd
 
 absen = [
-    "**Hadir bang grey** 😁",
+    "**Hadir bang** 😁",
     "**Hadir kak** 😉",
     "**Hadir dong** 😁",
-    "**Hadir grey ganteng** 🥵",
+    "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
     "**Hadir kak maap telat** 🥺",
+    "**Hadir Tuan Bdrl** 😎",
 ]
 
 salam = [
