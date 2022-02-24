@@ -534,10 +534,10 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Bdrl-Ubot",
+                    description="Repository Bᴅʀʟ-Usᴇʀʙᴏᴛ",
                     url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**BdrlUserbot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BdrlBukan)\n✰ **Support :** @BdrlSupporrt\n✰ **Repository :** [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BdrlBukan)\n✰ **Support :** @BdrlSupporrt\n✰ **Repository :** [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
@@ -582,11 +582,11 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✰ Bdrl-Ubot ✰",
-                    description="Bdrl-Ubot | Telethon",
+                    title="✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ ✰",
+                    description="Bᴅʀʟ-Usᴇʀʙᴏᴛ | Telethon",
                     url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**BdrlUserbot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @BdrlSupporrt\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @BdrlSupporrt\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
