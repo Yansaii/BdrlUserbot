@@ -17,12 +17,12 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, bdrl_cmd
 
 absen = [
-    "**Hadir bang** 😁",
+    "**Hadir bang Bdrl** 😁",
     "**Hadir kak** 😉",
     "**Hadir dong** 😁",
-    "**Hadir ganteng** 🥵",
+    "**Hadir bdrl ganteng** 🥵",
     "**Hadir bro** 😎",
-    "**Hadir kak maap telat** 🥺",
+    "**Hadir Bdrl maap telat** 🥺",
     "**Hadir Tuan Bdrl** 😎",
 ]
 
@@ -90,24 +90,22 @@ async def get_readable_time(seconds: int) -> str:
 
 @bdrl_cmd(pattern="ping$")
 async def _(ping):
-    """For .ping command, ping the userbot from any chat."""
+    """"For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**★**")
-    sleep(1)
-    await xx.edit("**P**")
-    await xx.edit("**Po**")
-    await xx.edit("**Pon**")
-    await xx.edit("**Pong**")
-    await xx.edit("**Pong!**")
+    xx = await edit_or_reply(ping, "**✰**")
+    await xx.edit("**✰✰**")
+    await xx.edit("**✰✰✰**")
+    await xx.edit("**✰✰✰✰**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await xx.edit(
-        f"**PONG!!**\n"
-        f"⚡ **Ping**  `%sms`\n"
-        f"⏳ **Uptime** `{uptime}` \n"
-        f"🤖 **Onwer** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ ✰\n"
+        f"**PONG!!🏓**\n"
+        f"✰ **Pinger** - `%sms`\n"
+        f"✰ **Uptime -** `{uptime}` \n"
+        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
     
 @bdrl_cmd(pattern="peng$")
@@ -115,7 +113,7 @@ async def _(peng):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(peng, "**★**")
+    xx = await edit_or_reply(peng, "**✰**")
     await xx.edit("**P**")
     await xx.edit("**Po**")
     await xx.edit("**Pon**")
