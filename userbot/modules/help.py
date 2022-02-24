@@ -30,7 +30,7 @@ async def help(event):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             event,
-            f"**✦ Daftar Perintah [Bdrl-Userbot](https://github.com/Yansaii/Bdrl-Ubot):**\n"
+            f"**✦ Daftar Perintah [Bdrl-Userbot](https://github.com/Yansaii/BdrlUserbot):**\n"
             f"**✦ Jumlah** `{len(modules)}` **Modules**\n"
             f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
