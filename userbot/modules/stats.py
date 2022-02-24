@@ -1,7 +1,7 @@
 # Copyright (C) 2020 Catuserbot <https://github.com/sandy1709/catuserbot>
 # Ported by @mrismanaziz
 # FROM Man-Userbot
-# Recode by @greyyvbss
+# Recode by @BdrlBukan
 #
 
 """Count the Number of Dialogs you have in your Telegram Account
