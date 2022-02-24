@@ -58,7 +58,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if heroku_app is None:
             await event.edit(
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy Cilik-Userbot dyno.**"
+                "**Kredensial Heroku tidak valid untuk deploy Bᴅʀʟ-Usᴇʀʙᴏᴛ dyno.**"
             )
             return repo.__del__()
         try:
@@ -161,7 +161,7 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await event.edit("`[HEROKU]: Update Deploy Cilik-Userbot Sedang Dalam Proses...`")
+        await event.edit("`[HEROKU]: Update Deploy Bᴅʀʟ-Usᴇʀʙᴏᴛ Sedang Dalam Proses...`")
         await deploy(event, repo, ups_rem, ac_br, txt)
         return
 
@@ -204,9 +204,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  •  **Syntax :** `{cmd}update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Cilik-Userbot.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Bᴅʀʟ-Usᴇʀʙᴏᴛ.\
         \n\n  •  **Syntax :** `{cmd}update deploy`\
-        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Cilik-Userbot.\
+        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Bᴅʀʟ-Usᴇʀʙᴏᴛ.\
     "
     }
 )
