@@ -22,7 +22,7 @@ async def _(event):
         await edit_delete(event, "**Silahkan Masukan Text Untuk Logo**")
     else:
         await edit_or_reply(event, "`Processing...`")
-    chat = "@Bdrl_Bukan_Robot"
+    chat = "@BdrlTapiBot"
     async with event.client.conversation(chat) as conv:
         try:
             msg = await conv.send_message(f"/logo {text}")
@@ -55,7 +55,7 @@ async def _(event):
         await edit_delete(event, "**Silahkan Masukan Text Untuk Logo**")
     else:
         await edit_or_reply(event, "`Processing...`")
-    chat = "@Bdrl_Bukan_Robot"
+    chat = "@BdrlTapiBot"
     async with event.client.conversation(chat) as conv:
         try:
             msg = await conv.send_message(f"/slogo {text}")
