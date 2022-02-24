@@ -62,9 +62,9 @@ async def shutdown_bot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**Bdrl Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**Bᴅʀʟ-Usᴇʀʙᴏᴛ** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(event, "**Bdrl Userbot Berhasil di matikan!**")
+    await edit_or_reply(event, "**Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil di matikan!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -75,7 +75,7 @@ async def shutdown_bot(event):
 async def restart_bot(event):
     if event.sender_id in SUDO_USERS:
         return
-    await edit_or_reply(event, "**Bdrl Userbot Berhasil di Restart**")
+    await edit_or_reply(event, "**Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
             BOTLOG_CHATID, "#RESTART \n" "**Bdrl Userbot Berhasil Di Restart**"
@@ -89,7 +89,7 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n┌❏ [Userbot Repo](https://github.com/Yansaii/Bdrl-Ubot/blob/Bdrl-Ubot/README.md)"
+        "\n┌❏ [Repo](https://github.com/Yansaii/BdrlUserbot/blob/Bdrl-Ubot/README.md)"
         "\n└❏ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
     )
 
@@ -116,8 +116,8 @@ async def repo_is_here(event):
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
         f"├❏ **GroupSupport :** [Bdrl Ubot](t.me/BdrlSupporrt)\n"
         f"├❏ **Channel  :** [Bdrl Ubot](t.me/RuangTerbukaa)\n"
-        f"├❏ **OwnerRepo :** [Bdrl](t.me/BukanBdrl)\n"
-        f"└❏ **Repo :** [Bdrl Ubot](https://github.com/Yansaii/Bdrl-Ubot)\n"
+        f"├❏ **OwnerRepo :** [Bdrl](t.me/BdrlBukan)\n"
+        f"└❏ **Repo :** [Bdrl Ubot](https://github.com/Yansaii/BdrlUserbot)\n"
     )
 
 
