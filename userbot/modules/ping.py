@@ -93,15 +93,22 @@ async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Pong!")
-    await asyncio.sleep(1)
+    xx = await edit_or_reply(ping, "**⚡**")
+    sleep(1)
+    await xx.edit("**P**")
+    await xx.edit("**Po**")
+    await xx.edit("**Pon**")
+    await xx.edit("**Pong**")
+    await xx.edit("**Pong!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(
-        f"**Pong !!** `%sms` \n"
-        f"**Uptime **- `{uptime}`\n" % (duration)
+    user = await bot.get_me()
+    await xx.edit(
+        f"**PONG!!**\n"
+        f"⚡ **Ping**  `%sms`\n"
+        f"⏳ **Uptime** `{uptime}` \n"
+        f"🤖 **Onwer** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
-
     
 @bdrl_cmd(pattern="peng$")
 async def _(peng):
