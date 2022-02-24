@@ -3,6 +3,7 @@
 #
 # Ported by @mrismanaziz
 # Recode by @greyyvbss
+# Recode2 by @BdrlBukan
 
 from telethon.tl.types import ChannelParticipantAdmin as admin
 from telethon.tl.types import ChannelParticipantCreator as owner
