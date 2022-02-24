@@ -105,7 +105,7 @@ while 0 < 6:
 
 del _DEVS
 
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1784606556").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1883126074").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 
 # For Blacklist Group Support
@@ -145,7 +145,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
 GROUP = os.environ.get("GROUP", "CilikSupport")
-CHANNEL = os.environ.get("CHANNEL", "CilikProject")
+CHANNEL = os.environ.get("CHANNEL", "RuangTerbukaa")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -160,7 +160,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/Yansaii/Bdrl-Ubot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Yansaii/BdrlUserbot.git"
 )
 
 # SQL Database URI
@@ -203,7 +203,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Bdrl-Ubot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Bdrl-Userbot")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✰")
@@ -238,11 +238,11 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/6ff3f7d3258d7a0b412e7.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/6ff3f7d3258d7a0b412e7.jpg"
 )
 
 # Picture For VCPLUGIN
@@ -528,7 +528,7 @@ with bot:
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**✰ Bdrl-Ubot Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -537,12 +537,12 @@ with bot:
                     description="Repository Bdrl-Ubot",
                     url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Bdrl-Ubot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BukanBdrl)\n✰ **Support :** @BdrlSupporrt\n✰ **Repository :** [Bdrl-Ubot](https://github.com/Yansaii/Bdrl-Ubot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**BdrlUserbot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BdrlBukan)\n✰ **Support :** @BdrlSupporrt\n✰ **Repository :** [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/Bdrl-Ubot"
+                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/BdrlUserbot"
                             ),
                         ],
                     ],
@@ -586,12 +586,12 @@ with bot:
                     description="Bdrl-Ubot | Telethon",
                     url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Bdrl-Ubot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @BdrlSupporrt\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**BdrlUserbot**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @BdrlSupporrt\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/Bdrl-Ubot"
+                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/BdrlUserbot"
                             ),
                         ],
                     ],
@@ -606,7 +606,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**✰ Bdrl-Ubot Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
