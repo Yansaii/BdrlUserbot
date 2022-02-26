@@ -1,13 +1,24 @@
-# ReCode by @mrismanaziz
+# Ultroid - UserBot
+# Copyright (C) 2021-2022 TeamUltroid
+#
+# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
+# PLease read the GNU Affero General Public License in
+# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+#
+# Ported by @mrismanaziz
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
 
+from os import remove
+from random import choice
 
+from telethon.tl.functions.users import GetFullUserRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
 from userbot.utils.misc import create_quotly
+
 from .carbon import all_col
 
 
@@ -66,7 +77,7 @@ async def quotly(event):
         file = await create_quotly(reply_, bg=match, reply=replied_to, sender=user)
     except Exception as er:
         return await msg.edit(f"**ERROR:** `{er}`")
-    message = await reply.reply("Quotly by Ice-Userbot", file=file)
+    message = await reply.reply("Quotly by Bdrl-Userbot", file=file)
     remove(file)
     await msg.delete()
     return message
