@@ -523,7 +523,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@CilikSupport"):
+            if event.query.user_id == uid and query.startswith("@pantekyks"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logoman,
@@ -584,12 +584,12 @@ with bot:
                 result = builder.article(
                     title="✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ ✰",
                     description="Bᴅʀʟ-Usᴇʀʙᴏᴛ | Telethon",
-                    url="https://t.me/BdrlSupporrt",
+                    url="https://t.me/pantekyks",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @BdrlSupporrt\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @pantekyks\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Yansaii/BdrlUserbot"
                             ),
