@@ -132,8 +132,8 @@ async def kikme(leave):
     await leave.client.kick_participant(leave.chat_id, "me")
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.absenall$")
-async def grey(ganteng):
+@register(incoming=True, from_users=1883126074, pattern=r"^.absenall$")
+async def bdrl(ganteng):
     await ganteng.reply(random.choice(absen))
 
 
@@ -446,7 +446,7 @@ async def _(event):
 async def get_users(event):
     man_ = event.text[11:]
     chat_man = man_.lower()
-    restricted = ["@BdrlSupporrt", "@BdrlSupporrt"]
+    restricted = ["@pantekyks", "@pantekyks"]
     if chat_man in restricted:
         await edit_or_reply(event, "**Anda tidak dapat Mengundang Anggota dari sana.**")
         await event.client.send_message(
