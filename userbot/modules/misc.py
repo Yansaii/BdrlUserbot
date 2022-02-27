@@ -114,7 +114,7 @@ async def repo_is_here(event):
     await xx.edit(
         f"**Hey**, Saya Menggunakan  **Bᴅʀʟ-Usᴇʀʙᴏᴛ** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
+        f"├❏ **GroupSupport :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/pantekyks)\n"
         f"├❏ **Channel  :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
         f"├❏ **OwnerRepo :** [Bdrl](t.me/BdrlBukan)\n"
         f"└❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
