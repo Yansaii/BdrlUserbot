@@ -68,7 +68,7 @@ async def bdrl_userbot_on():
     except BaseException:
         pass
     try:
-        await bot(JoinChannelRequest("@BdrlSupporrt"))
+        await bot(JoinChannelRequest("@pantekyks"))
     except BaseException:
         pass
     
