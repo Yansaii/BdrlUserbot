@@ -192,7 +192,7 @@ async def upstream(event):
             ):
                 return await event.edit(
                     "**Quick update telah dinonaktifkan untuk pembaruan ini; "
-                    "Gunakan** `.update deploy` **sebagai gantinya.**"
+                    "Gunakan** `{cmd}update deploy` **sebagai gantinya.**"
                 )
         await event.edit("**Perfoming a quick update, please wait...**")
         await update(event, repo, ups_rem, ac_br)
