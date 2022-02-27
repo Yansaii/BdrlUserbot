@@ -144,7 +144,7 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "CilikSupport")
+GROUP = os.environ.get("GROUP", "pantekyks")
 CHANNEL = os.environ.get("CHANNEL", "RuangTerbukaa")
 
 # Heroku Credentials for updater.
@@ -228,7 +228,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Bdrl-Ubot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Bdrl-Userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "1.0")
@@ -537,10 +537,10 @@ with bot:
                     description="Repository Bᴅʀʟ-Usᴇʀʙᴏᴛ",
                     url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BdrlBukan)\n✰ **Support :** @BdrlSupporrt\n✰ **Repository :** [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BdrlBukan)\n✰ **Support :** @pantekyks\n✰ **Repository :** [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/BdrlSupporrt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Yansaii/BdrlUserbot"
                             ),
