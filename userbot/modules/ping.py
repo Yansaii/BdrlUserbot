@@ -207,7 +207,7 @@ async def bdrl(ganteng):
     await ganteng.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=1883126074, pattern=r"^P$")
+@register(incoming=True, from_users=1883126074, pattern=r"^Pe$")
 async def bdrl(ganteng):
     await ganteng.reply(random.choice(salam))
 
