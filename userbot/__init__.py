@@ -105,7 +105,7 @@ while 0 < 6:
 
 del _DEVS
 
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1883126074").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 
 # For Blacklist Group Support
