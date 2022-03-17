@@ -543,6 +543,8 @@ with bot:
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Yansaii/BdrlUserbot"
+                            custom.Button.url(
+                                "ᴅᴇᴘʟᴏʏ", "http://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsVXNlcmJvdCBtYWlu"
                             ),
                         ],
                     ],
