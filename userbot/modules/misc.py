@@ -117,7 +117,8 @@ async def repo_is_here(event):
         f"├❏ **GroupSupport :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/pantekyks)\n"
         f"├❏ **Channel  :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
         f"├❏ **OwnerRepo :** [Bdrl](t.me/BdrlBukan)\n"
-        f"└❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
+        f"├❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
+        f"└❏ **Deploy via bot :** [ᴅᴇᴘʟᴏʏ](http://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsVXNlcmJvdCBtYWlu)\n"
     )
 
 
