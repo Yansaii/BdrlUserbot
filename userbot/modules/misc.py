@@ -132,7 +132,7 @@ async def string_is_here(event):
         "\n├❏ [[ KLIK DISINI ]](https://t.me/pocongscrapbot)"
         "\n├❏ **DEPLOY VIA BOT :**"
         "\n└❏ [[ KLIK DISINI ]](http://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsVXNlcmJvdCBtYWlu)",
-    )(
+    )
 
 
 @bdrl_cmd(pattern="raw$")
