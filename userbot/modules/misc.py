@@ -117,8 +117,7 @@ async def repo_is_here(event):
         f"├❏ **GroupSupport :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/pantekyks)\n"
         f"├❏ **Channel  :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
         f"├❏ **OwnerRepo :** [Bdrl](t.me/BdrlBukan)\n"
-        f"├❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
-        f"└❏ **DeployViaBot :** [Dᴇᴘʟᴏʏ](http://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsVXNlcmJvdCBtYWlu)\n"
+        f"└❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
     )
 
 
@@ -128,10 +127,12 @@ async def string_is_here(event):
         event,
         "**List Bot**\n"
         "\n┌❏ **GET STRING BOT:**"
-        "\n├❏ [[ KLIK DISINI ]](https://t.me/CilikStringbot)"
+        "\n├❏ [[ KLIK DISINI ]](https://t.me/stringyann_robot)"
         "\n├❏ **GET API ID & API HASH :**"
-        "\n└❏ [[ KLIK DISINI ]](https://t.me/pocongscrapbot)",
-    )
+        "\n├❏ [[ KLIK DISINI ]](https://t.me/pocongscrapbot)"
+        "\n├❏ **DEPLOY VIA BOT :**"
+        "\n└❏ [[ KLIK DISINI ]](http://telegram.dog/XTZ_HerokuBot?start=WWFuc2FpaS9CZHJsVXNlcmJvdCBtYWlu)",
+    )(
 
 
 @bdrl_cmd(pattern="raw$")
