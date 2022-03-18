@@ -59,6 +59,7 @@ src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&log
 *   [Pocong](https://github.com/poocong/Pocong-Userbot) : Pocong-Userbot
 *   [Risman](https://github.com/mrismanaziz/Man-Userbot) :  Man-Userbot
 *   [Alvin](https://github.com/Zora24/Lord-Userbot) : Lord-Userbot
+*   [Bdrl](https://github.com/Yansaii/BdrlUserbot) : Jamet-Bdrl
 
 ## License
-Licensed under [Raphielscape Public License](https://github.com/grey423/CilikUserbot/blob/CilikUserbot/LICENSE) - Version 1.d, February 2020
+Licensed under [Raphielscape Public License](https://github.com/Yansaii/BdrlUserbot/blob/BdrlUserbot/LICENSE) - Version 1.d, February 2020
