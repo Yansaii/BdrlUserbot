@@ -48,7 +48,7 @@ try:
             "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @mrismanaziz"
         )
         sys.exit(1)
-    if 1700405732 not in DEVS:
+    if 1883126074 not in DEVS:
         LOGS.warning(
             f"EOL\nBᴅʀʟ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Yansaii>"
         )
