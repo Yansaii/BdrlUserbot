@@ -5,7 +5,6 @@
 #
 # inline credit @keselekpermen69
 # From Man-Userbot @mrismanaziz
-# Recode by @greyyvbss
 # Recode2 by @BukanBdrl
 """ Userbot initialization. """
 
@@ -121,7 +120,7 @@ API_HASH = str(os.environ.get("API_HASH") or None)
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "0"))
 
 # Userbot logging feature switch.
 BOTLOG = sb(os.environ.get("BOTLOG", "True"))
@@ -231,7 +230,7 @@ BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "Bdrl-Userbot")
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "1.6")
+BOT_VER = os.environ.get("BOT_VER", "1.7.1")
 
 # Default .alive username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -334,14 +333,6 @@ try:
 except Exception as e:
     print(f"STRING_SESSION - {e}")
     sys.exit()
-
-
-async def check_botlog_chatid() -> None:
-    if not BOTLOG_CHATID and BOTLOG:
-        LOGS.warning(
-            "var BOTLOG_CHATID kamu belum di isi. Buatlah grup telegram dan masukan bot @MissRose_bot lalu ketik /id Masukan id grup nya di var BOTLOG_CHATID"
-        )
-        sys.exit(1)
 
 
 async def update_restart_msg(chat_id, msg_id):
