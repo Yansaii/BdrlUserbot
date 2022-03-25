@@ -685,10 +685,4 @@ with bot:
         LOGS.info(
             "Help Mode Inline Bot Mu Tidak aktif. Tidak di aktifkan juga tidak apa-apa. "
             "Untuk Mengaktifkannya Buat bot di @BotFather Lalu Tambahkan var BOT_TOKEN dan BOT_USERNAME. "
-            "Pergi Ke @BotFather lalu settings bot » Pilih mode inline » Turn On. "
-        )
-    try:
-        bot.loop.run_until_complete(check_botlog_chatid())
-    except BaseException as e:
-        LOGS.exception(f"[BOTLOG] - {e}")
-        sys.exit(1)
+            "Pergi Ke @BotFather lalu settings bot » Pilih mode inline » Turn On. ")
