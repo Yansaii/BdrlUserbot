@@ -1,7 +1,6 @@
 # Credits: @mrismanaziz
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
-# ReCode by @grey423
-# Recode2 by @BukanBdrl
+# t.me/SharingUserbot & t.me/Lunatic0de
 
 import asyncio
 import importlib
@@ -10,8 +9,12 @@ import sys
 from pathlib import Path
 from random import randint
 
+
 import heroku3
 from telethon.tl.functions.contacts import UnblockRequest
+from telethon.errors import ChannelsTooMuchError
+from telethon.tl.functions.channels import CreateChannelRequest
+from telethon.tl.types import ChatAdminRights
 
 from userbot import (
     BOT_TOKEN,
@@ -40,11 +43,11 @@ async def autobot():
         BOTLOG_CHATID, "**SEDANG MEMBUAT BOT TELEGRAM UNTUK ANDA DI @BotFather**"
     )
     who = await bot.get_me()
-    name = who.first_name + " Assisten"
+    name = who.first_name + " Assistant Bot"
     if who.username:
         username = who.username + "_bot"
     else:
-        username = "Assist3n" + (str(who.id))[5:] + "bot"
+        username = "Assistant" + (str(who.id))[5:] + "bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -77,7 +80,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "Assist3n" + (str(who.id))[6:] + str(ran) + "ubot"
+        username = "Assistant" + (str(who.id))[6:] + str(ran) + "ubot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -106,7 +109,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"Owner ~ {who.first_name} \nPowered By ~ @RuangTerbukaa"
+                bf, f"Owner ~ {who.first_name} \nPowered By ~ @BdrlBukan"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -148,7 +151,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"Owner ~ {who.first_name} \n Powered By ~ @RuangTerBukaa"
+            bf, f"Owner ~ {who.first_name} \nPowered By ~ @BdrlBukan"
         )
         await bot.send_message(
             BOTLOG_CHATID,
@@ -156,7 +159,7 @@ async def autobot():
         )
         await bot.send_message(
             BOTLOG_CHATID,
-            "**Tunggu Sebentar, Sedang MeRestart Heroku untuk Menerapkan Perubahan.**",
+            "**Tunggu Sebentar, Sedang MeRestart Heroku untuk Menerapkan Perubahan**",
         )
         heroku_var["BOT_TOKEN"] = token
         heroku_var["BOT_USERNAME"] = f"@{username}"
@@ -165,6 +168,53 @@ async def autobot():
             "Silakan Hapus Beberapa Bot Telegram Anda di @Botfather atau Set Var BOT_TOKEN dengan token bot"
         )
         sys.exit(1)
+
+
+async def autopilot():
+    if BOTLOG_CHATID and str(BOTLOG_CHATID).startswith("-100"):
+        return
+    y = []  # To Refresh private ids
+    async for x in bot.iter_dialogs():
+        y.append(x.id)
+    if BOTLOG_CHATID:
+        try:
+            await bot.get_entity(int("BOTLOG_CHATID"))
+            return
+        except BaseException:
+            del heroku_var["BOTLOG_CHATID"]
+    try:
+        r = await bot(
+            CreateChannelRequest(
+                title="My Bdrl Logs",
+                about="» Group log Created by: Bᴅʀʟ-Usᴇʀʙᴏᴛ\n\n» Support : @pantekyks\n» Channel: @RuangTerbukaa",
+                megagroup=True,
+            ),
+        )
+    except ChannelsTooMuchError:
+        LOGS.info(
+            "Channel dan Group Lu Banyak Ngentod, Hapus Salah Satu Dan Restart Lagi"
+        )
+        exit(1)
+    except BaseException:
+        LOGS.info(
+            "Terjadi kesalahan, Buat sebuah grup lalu isi id nya di config var BOTLOG_CHATID."
+        )
+        exit(1)
+    chat_id = r.chats[0].id
+    if not str(chat_id).startswith("-100"):
+        heroku_var["BOTLOG_CHATID"] = "-100" + str(chat_id)
+    else:
+        heroku_var["BOTLOG_CHATID"] = str(chat_id)
+    rights = ChatAdminRights(
+        add_admins=True,
+        invite_users=True,
+        change_info=True,
+        ban_users=True,
+        delete_messages=True,
+        pin_messages=True,
+        anonymous=False,
+        manage_call=True,
+    )
 
 
 def load_module(shortname):
