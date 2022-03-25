@@ -30,7 +30,7 @@ from telethon import version
 
 from userbot import BOT_TOKEN, BOT_USERNAME, BOT_VER, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
-from userbot import DEVS, LOGS, bot, call_py
+from userbot import DEVS, LOGS, bot, branch, call_py
 from userbot.modules import ALL_MODULES
 from userbot.utils import autobot, autopilot, checking, waiting
 
@@ -86,7 +86,7 @@ async def bdrl_userbot_on():
         if BOTLOG_CHATID != 0:
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"✪ **Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Di Aktifkan** ✪\n━━\n➠ **Userbot Version -** `{BOT_VER}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
+                f"✪ **Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Di Aktifkan** ✪\n━━\n➠ **Userbot Version -** `{BOT_VER}@{branch}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
             )
 
     except Exception as e:
