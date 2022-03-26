@@ -1,2 +1,2 @@
-# Extra Resources for CilikUserbot
-Repository [CilikUserbot](https://github.com/grey423/CilikUserbot)
+# Extra Resources for BdrlUserbot
+Repository [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)
