@@ -2,7 +2,6 @@
 # Thanks To @tofik_dn || https://github.com/tofikdn
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
-FROM Man-Userbot
 # ReCode by @greyyvbss
 # Recode2 by @BukanBdrl
 
