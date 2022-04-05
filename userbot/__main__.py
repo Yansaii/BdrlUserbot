@@ -33,7 +33,7 @@ from userbot import CMD_HANDLER as cmd
 from userbot import DEVS, LOGS, bot, call_py
 from userbot.modules.misc import branch
 from userbot.modules import ALL_MODULES
-from userbot.utils import autobot, autopilot, checking, waiting
+from userbot.utils import autobot, autopilot, checking
 
 try:
     bot.start()
@@ -113,8 +113,7 @@ async def bdrl_userbot_on():
     except BaseException:
         pass
 
-
-bot.loop.run_until_complete(waiting())
+    
 bot.loop.run_until_complete(checking())
 bot.loop.run_until_complete(bdrl_userbot_on())
 if not BOT_TOKEN:

