@@ -127,7 +127,7 @@ async def string_is_here(event):
         event,
         "**List Bot**\n"
         "\n┌❏ **GET STRING BOT:**"
-        "\n├❏ [[ KLIK DISINI ]](https://t.me/stringyann_robot)"
+        "\n├❏ [[ KLIK DISINI ]](https://t.me/yurikiistringbot)"
         "\n├❏ **GET API ID & API HASH :**"
         "\n├❏ [[ KLIK DISINI ]](https://t.me/pocongscrapbot)"
         "\n├❏ **DEPLOY VIA BOT :**"
