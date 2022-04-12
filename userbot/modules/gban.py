@@ -71,7 +71,7 @@ async def gben(userbot):
         return await dark.edit("**Gagal Global Banned :(**")
     if user:
         if user.id in DEVS:
-            return await dark.edit("**Gagal Global Banned, Dia Adalah Pembuat Saya 🤪**")
+            return await dark.edit("**Anda Gagal GBAN Karena Dia Adalah Jamet🤪**")
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
         except BaseException:
@@ -140,7 +140,7 @@ async def gunben(userbot):
     if user:
         if user.id in DEVS:
             return await dark.edit(
-                "**Tuan Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat Ku**"
+                "**Dia Tidak Bisa Terkena Perintah Ini, Karna Dia Adalah Jamet**"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
