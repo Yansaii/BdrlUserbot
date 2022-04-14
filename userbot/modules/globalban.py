@@ -54,7 +54,7 @@ async def gban(event):
         await gbun.edit("**Ngapain NgeGban diri sendiri Goblok 🤬**")
         return
     if user.id in DEVS:
-        await gbun.edit("**Anda Gagal GBAN Karena Dia Adalah Jamet 😝**")
+        await gbun.edit("**Anda Gagal GBAN Karena Dia Adalah TUHAN Saya 😝**")
         return
     if gban_sql.is_gbanned(user.id):
         await gbun.edit(
