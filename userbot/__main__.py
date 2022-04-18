@@ -108,7 +108,7 @@ async def bdrl_userbot_on():
             manage_call=True,
         )
         await bot(EditAdminRequest(int(BOTLOG_CHATID), BOT_USERNAME, rights, "Assistant"))
-        logo = "userbot/resources/20220401_203326.jpg"
+        logo = "userbot/resources/20220419_024259.jpg"
         await bot(EditPhotoRequest(BOTLOG_CHATID, await bot.upload_file(logo)))
     except BaseException:
         pass
