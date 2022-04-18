@@ -10,7 +10,7 @@
    </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/6ff3f7d3258d7a0b412e7.jpg">
+  <img src="https://telegra.ph/file/ae28126be3545f6711f4e.jpg">
 </p>
 
 Bdel-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
