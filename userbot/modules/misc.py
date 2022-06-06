@@ -1,10 +1,14 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
+#
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
+#
 # You can find misc modules, which dont fit in anything xD
-# Copyright (C) 2022 @mrismanaziz
-# ReCode by @greyyvbss
-# Recode2 by @BukanBdrl
+#
+# Recode by @mrismanaziz
+# FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
+# t.me/SharingUserbot & t.me/Lunatic0de
+#
 
 import io
 import os
@@ -16,30 +20,29 @@ from time import sleep
 
 import requests
 from bs4 import BeautifulSoup
-from git import Repo
 from heroku3 import from_key
 from PIL import Image
 
-from userbot import BOT_VER, BOTLOG_CHATID
-from userbot import CMD_HANDLER as cmd
-from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, SUDO_USERS
-from userbot.utils import edit_or_reply, bdrl_cmd, time_formatter
+from AyiinXd import BOTLOG_CHATID
+from AyiinXd import CMD_HANDLER as cmd
+from AyiinXd import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME
+from AyiinXd.ayiin import bdrl_cmd, edit_or_reply, time_formatter
+
 
 # ================= CONSTANT =================
-HEROKU_APP = from_key(HEROKU_API_KEY).apps()[HEROKU_APP_NAME]
+if HEROKU_APP_NAME is not None and HEROKU_API_KEY is not None:
+    HEROKU_APP = from_key(HEROKU_API_KEY).apps()[HEROKU_APP_NAME]
+else:
+    HEROKU_APP = None
 # ============================================
 
 opener = urllib.request.build_opener()
 useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.70 Mobile Safari/537.36"
 opener.addheaders = [("User-agent", useragent)]
-repo = Repo()
-branch = repo.active_branch.name
 
 
-@bdrl_cmd(pattern="sleep ([0-9]+)$")
+@bdrl_cmd(pattern="sleep ([0-9]+)$", allow_sudo=False)
 async def sleepybot(time):
-    if time.sender_id in SUDO_USERS:
-        return
     counter = int(time.pattern_match.group(1))
     xx = await edit_or_reply(time, "`Saya mengantuk dan tertidur...`")
     if BOTLOG_CHATID:
@@ -52,11 +55,9 @@ async def sleepybot(time):
     await xx.edit("**Oke, saya sudah bangun sekarang.**")
 
 
-@bdrl_cmd(pattern="shutdown$")
+@bdrl_cmd(pattern="shutdown$", allow_sudo=False)
 async def shutdown_bot(event):
     if event.fwd_from:
-        return
-    if event.sender_id in SUDO_USERS:
         return
     if BOTLOG_CHATID:
         await event.client.send_message(
@@ -71,14 +72,13 @@ async def shutdown_bot(event):
         sys.exit(0)
 
 
-@bdrl_cmd(pattern="restart$")
+@bdrl_cmd(pattern="restart$", allow_sudo=False)
 async def restart_bot(event):
-    if event.sender_id in SUDO_USERS:
-        return
     await edit_or_reply(event, "**Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Di Restart**"
+            BOTLOG_CHATID, 
+            "#RESTART \n" "**Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -161,7 +161,7 @@ async def raw(event):
         )
 
 
-@bdrl_cmd(pattern="reverse(?: |$)(\d*)")
+@bdrl_cmd(pattern="reverse(?: |$)(\\d*)")
 async def okgoogle(img):
     if os.path.isfile("okgoogle.png"):
         os.remove("okgoogle.png")
@@ -183,8 +183,17 @@ async def okgoogle(img):
         image.close()
         # https://stackoverflow.com/questions/23270175/google-reverse-image-search-using-post-request#28792943
         searchUrl = "https://www.google.com/searchbyimage/upload"
-        multipart = {"encoded_image": (name, open(name, "rb")), "image_content": ""}
-        response = requests.post(searchUrl, files=multipart, allow_redirects=False)
+        multipart = {
+            "encoded_image": (
+                name,
+                open(
+                    name,
+                    "rb")),
+            "image_content": ""}
+        response = requests.post(
+            searchUrl,
+            files=multipart,
+            allow_redirects=False)
         fetchUrl = response.headers["Location"]
         if response != 400:
             await xx.edit(
@@ -227,9 +236,8 @@ async def ParseSauce(googleurl):
     results = {"similar_images": "", "best_guess": ""}
     try:
         for similar_image in soup.findAll("input", {"class": "gLFyf"}):
-            url = "https://www.google.com/search?tbm=isch&q=" + urllib.parse.quote_plus(
-                similar_image.get("value")
-            )
+            url = "https://www.google.com/search?tbm=isch&q=" + \
+                urllib.parse.quote_plus(similar_image.get("value"))
             results["similar_images"] = url
     except BaseException:
         pass
@@ -278,18 +286,26 @@ async def send(event):
 CMD_HELP.update(
     {
         "send": f"**Plugin : **`send`\
-        \n\n  •  **Syntax :** `{cmd}send` <username/id>\
-        \n  •  **Function : **Meneruskan pesan balasan ke obrolan tertentu tanpa tag Forwarded from. Bisa mengirim ke Group Chat atau ke Personal Message\
+        \n\n  »  **Perintah :** `{cmd}send` <username/id>\
+        \n  »  **Kegunaan : **Meneruskan pesan balasan ke obrolan tertentu tanpa tag Forwarded from. Bisa mengirim ke Group Chat atau ke Personal Message\
     "
     }
 )
-
 
 CMD_HELP.update(
     {
         "random": f"**Plugin : **`random`\
-        \n\n  •  **Syntax :** `{cmd}random`\
-        \n  •  **Function : **Dapatkan item acak dari daftar item. \
+        \n\n  »  **Perintah :** `{cmd}random`\
+        \n  »  **Kegunaan : **Dapatkan item acak dari daftar item. \
+    "
+    }
+)
+
+CMD_HELP.update(
+    {
+        "sleep": f"**Plugin : **`sleep`\
+        \n\n  »  **Perintah :** `{cmd}sleep`\
+        \n  »  **Kegunaan : **Biarkan Ayiin-Userbot tidur selama beberapa detik \
     "
     }
 )
@@ -297,11 +313,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository BdrlUserbot`\
-        \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository BdrlUserbot\
-        \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String BdrlUserbot\
+        "repo": f"**Plugin : **`Repository Ayiin-Userbot`\
+        \n\n  »  **Perintah :** `{cmd}repo`\
+        \n  »  **Kegunaan : **Menampilan link Repository Ayiin-Userbot\
+        \n\n  »  **Perintah :** `{cmd}string`\
+        \n  »  **Kegunaan : **Menampilan link String Ayiin-Userbot\
     "
     }
 )
@@ -310,8 +326,8 @@ CMD_HELP.update(
 CMD_HELP.update(
     {
         "readme": f"**Plugin : **`Panduan Menggunakan userbot`\
-        \n\n  •  **Syntax :** `{cmd}readme`\
-        \n  •  **Function : **Menyediakan tautan untuk mengatur userbot dan modulnya\
+        \n\n  »  **Perintah :** `{cmd}readme`\
+        \n  »  **Kegunaan : **Menyediakan tautan untuk mengatur userbot dan modulnya\
     "
     }
 )
@@ -319,13 +335,19 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "misc": f"**Plugin : **`Daftar Perintah misc`\
-        \n\n  •  **Syntax :** `{cmd}restart`\
-        \n  •  **Function : **Untuk Merestart userbot.\
-        \n\n  •  **Syntax :** `{cmd}shutdown`\
-        \n  •  **Function : **Mematikan Userbot.\
-        \n\n  •  **Syntax :** `{cmd} sleep`\
-        \n  •  **Function : **Biarkan BdrlUserbot tidur selama waktu yg ditetapkan.\
+        "restart": f"**Plugin : **`Restart Ayiin-Userbot`\
+        \n\n  »  **Perintah :** `{cmd}restart`\
+        \n  »  **Kegunaan : **Untuk Merestart userbot.\
+    "
+    }
+)
+
+
+CMD_HELP.update(
+    {
+        "shutdown": f"**Plugin : **`shutdown`\
+        \n\n  »  **Perintah :** `{cmd}shutdown`\
+        \n  »  **Kegunaan : **Mematikan Userbot.\
     "
     }
 )
@@ -334,8 +356,8 @@ CMD_HELP.update(
 CMD_HELP.update(
     {
         "raw": f"**Plugin : **`raw`\
-        \n\n  •  **Syntax :** `{cmd}raw`\
-        \n  •  **Function : **Dapatkan data berformat seperti JSON terperinci tentang pesan yang dibalas.\
+        \n\n  »  **Perintah :** `{cmd}raw`\
+        \n  »  **Kegunaan : **Dapatkan data berformat seperti JSON terperinci tentang pesan yang dibalas.\
     "
     }
 )
@@ -344,8 +366,8 @@ CMD_HELP.update(
 CMD_HELP.update(
     {
         "repeat": f"**Plugin : **`repeat`\
-        \n\n  •  **Syntax :** `{cmd}repeat`\
-        \n  •  **Function : **Mengulangi teks untuk beberapa kali. Jangan bingung ini dengan spam tho.\
+        \n\n  »  **Perintah :** `{cmd}repeat`\
+        \n  »  **Kegunaan : **Mengulangi teks untuk beberapa kali. Jangan bingung ini dengan spam tho.\
     "
     }
 )
