@@ -30,7 +30,8 @@ from telethon import version
 
 from userbot import BOT_TOKEN, BOT_USERNAME, BOT_VER, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
-from userbot import DEVS, LOGS, bot, branch, call_py
+from userbot import DEVS, LOGS, bot, call_py
+from userbot.modules.misc import branch
 from userbot.modules import ALL_MODULES
 from userbot.utils import autobot, autopilot, checking
 
