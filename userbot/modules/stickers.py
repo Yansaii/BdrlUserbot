@@ -42,11 +42,11 @@ from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
 from userbot.utils.misc import animator
 
 KANGING_STR = [
-    "Colong Sticker dulu yee kan",
+    "ku minta ya inii kak",
     "Ini Sticker aku colong yaa DUARR!",
     "Waw Stickernya Bagus Nih...Colong Dulu Yekan..",
     "ehh, keren nih... gua colong ya stickernya...",
-    "Boleh juga ni Sticker Colong ahh~",
+    "Yeyeyee ini punyaku piw piww~",
 ]
 
 
