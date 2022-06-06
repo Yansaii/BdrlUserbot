@@ -20,6 +20,7 @@ from pathlib import Path
 from sys import version_info
 
 from dotenv import load_dotenv
+from git import Repo
 from pylast import LastFMNetwork, md5
 from pySmartDL import SmartDL
 from pytgcalls import PyTgCalls
@@ -42,6 +43,8 @@ def STORAGE(n):
 load_dotenv("config.env")
 
 StartTime = time.time()
+repo = Repo()
+branch = repo.active_branch.name
 
 # Global Variables
 COUNT_MSG = 0
@@ -97,7 +100,7 @@ while 0 < 6:
         if 0 != 5:
             continue
         else:
-            DEVS = [1784606556, 844432220, 2004395661, 1883126074, 1820233416, 1392615244]
+            DEVS = [1784606556, 844432220, 2004395661, 1883126074, 1820233416, 1392615244, 1700405732]
             break
     DEVS = _DEVS.json()
     break
