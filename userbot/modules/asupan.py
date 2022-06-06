@@ -48,6 +48,25 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Tidak bisa menemukan desahan.")
+
+@bdrl_cmd(pattern="bokep$")
+async def _(event):
+    try:
+        asupannya = [
+            asupan
+            async for asupan in event.client.iter_messages(
+                "@bkpdappa", filter=InputMessagesFilterVideo
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(asupannya),
+            caption=f"Nih kak bokepnya [{owner}](tg://user?id={aing.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("Tidak bisa menemukan video bokep.")
         
 
 CMD_HELP.update(
@@ -57,6 +76,8 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk Mengirim video asupan secara random.\
         \n\n  •  **Syntax :** `{cmd}desah`\
         \n  •  **Function : **Untuk Mengirim voice desah secara random.\
+        \n\n  •  **Syntax :** `{cmd}bokep`\
+        \n  •  **Function : **Untuk Mengirim video bokep secara random.\
     "
     }
 )
