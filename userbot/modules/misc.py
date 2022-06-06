@@ -23,10 +23,10 @@ from bs4 import BeautifulSoup
 from heroku3 import from_key
 from PIL import Image
 
-from AyiinXd import BOTLOG_CHATID
-from AyiinXd import CMD_HANDLER as cmd
-from AyiinXd import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME
-from AyiinXd.ayiin import bdrl_cmd, edit_or_reply, time_formatter
+from userbot import BOTLOG_CHATID
+from userbot import CMD_HANDLER as cmd
+from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME
+from userbot.utils import bdrl_cmd, edit_or_reply, time_formatter
 
 
 # ================= CONSTANT =================
