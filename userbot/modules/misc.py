@@ -115,12 +115,11 @@ async def repeat(event):
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, Saya Menggunakan  **Bᴅʀʟ-Usᴇʀʙᴏᴛ** \n\n"
-        f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/pantekyks)\n"
-        f"├❏ **Channel  :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
-        f"├❏ **OwnerRepo :** [Bdrl](t.me/BdrlBukan)\n"
-        f"└❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
+        "ᴜsᴇʀʙᴏᴛ ᴛᴇʟᴇɢʀᴀᴍ\n"
+        "ʀᴇᴘᴏ 🇮🇩\n"
+        "╰⎆ [ʙᴅʀʟ-ᴜsᴇʀʙᴏᴛ​](https://github.com/Yansaii/BdrlUserbot)\n"
+        "𐂡 **ᴏᴡɴᴇʀ​** ⋗ [ʙᴅʀʟ](t.me/bdrlbukan)\n"
+        "𐂡 **sᴜᴘᴘᴏʀᴛ​** ⋗ [ɢʀᴏᴜᴘs](t.me/pantekyks)\n"
     )
 
 
